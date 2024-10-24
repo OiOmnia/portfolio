@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Proza Display';
+    src: url('ProzaDisplay-Light.eot');
+    src: local('Proza Display Light'), local('ProzaDisplay-Light'),
+        url('ProzaDisplay-Light.eot?#iefix') format('embedded-opentype'),
+        url('ProzaDisplay-Light.woff2') format('woff2'),
+        url('ProzaDisplay-Light.woff') format('woff'),
+        url('ProzaDisplay-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proza Display';
+    src: url('ProzaDisplay-SemiBold.eot');
+    src: local('Proza Display SemiBold'), local('ProzaDisplay-SemiBold'),
+        url('ProzaDisplay-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('ProzaDisplay-SemiBold.woff2') format('woff2'),
+        url('ProzaDisplay-SemiBold.woff') format('woff'),
+        url('ProzaDisplay-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proza Display';
+    src: url('ProzaDisplay-BlackItalic.eot');
+    src: local('Proza Display Black Italic'), local('ProzaDisplay-BlackItalic'),
+        url('ProzaDisplay-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('ProzaDisplay-BlackItalic.woff2') format('woff2'),
+        url('ProzaDisplay-BlackItalic.woff') format('woff'),
+        url('ProzaDisplay-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proza Display';
+    src: url('ProzaDisplay-SemiBoldItalic.eot');
+    src: local('Proza Display SemiBold Italic'), local('ProzaDisplay-SemiBoldItalic'),
+        url('ProzaDisplay-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('ProzaDisplay-SemiBoldItalic.woff2') format('woff2'),
+        url('ProzaDisplay-SemiBoldItalic.woff') format('woff'),
+        url('ProzaDisplay-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proza Display';
+    src: url('ProzaDisplay-Regular.eot');
+    src: local('Proza Display Regular'), local('ProzaDisplay-Regular'),
+        url('ProzaDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('ProzaDisplay-Regular.woff2') format('woff2'),
+        url('ProzaDisplay-Regular.woff') format('woff'),
+        url('ProzaDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proza Display';
+    src: url('ProzaDisplay-ExtraBoldItalic.eot');
+    src: local('Proza Display ExtraBold Italic'), local('ProzaDisplay-ExtraBoldItalic'),
+        url('ProzaDisplay-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('ProzaDisplay-ExtraBoldItalic.woff2') format('woff2'),
+        url('ProzaDisplay-ExtraBoldItalic.woff') format('woff'),
+        url('ProzaDisplay-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proza Display';
+    src: url('ProzaDisplay-Bold.eot');
+    src: local('Proza Display Bold'), local('ProzaDisplay-Bold'),
+        url('ProzaDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('ProzaDisplay-Bold.woff2') format('woff2'),
+        url('ProzaDisplay-Bold.woff') format('woff'),
+        url('ProzaDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proza Display Regular';
+    src: url('ProzaDisplay-RegularItalic.eot');
+    src: local('Proza Display Regular Italic'), local('ProzaDisplay-RegularItalic'),
+        url('ProzaDisplay-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('ProzaDisplay-RegularItalic.woff2') format('woff2'),
+        url('ProzaDisplay-RegularItalic.woff') format('woff'),
+        url('ProzaDisplay-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proza Display';
+    src: url('ProzaDisplay-Black.eot');
+    src: local('Proza Display Black'), local('ProzaDisplay-Black'),
+        url('ProzaDisplay-Black.eot?#iefix') format('embedded-opentype'),
+        url('ProzaDisplay-Black.woff2') format('woff2'),
+        url('ProzaDisplay-Black.woff') format('woff'),
+        url('ProzaDisplay-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proza Display';
+    src: url('ProzaDisplay-BoldItalic.eot');
+    src: local('Proza Display Bold Italic'), local('ProzaDisplay-BoldItalic'),
+        url('ProzaDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('ProzaDisplay-BoldItalic.woff2') format('woff2'),
+        url('ProzaDisplay-BoldItalic.woff') format('woff'),
+        url('ProzaDisplay-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proza Display';
+    src: url('ProzaDisplay-LightItalic.eot');
+    src: local('Proza Display Light Italic'), local('ProzaDisplay-LightItalic'),
+        url('ProzaDisplay-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('ProzaDisplay-LightItalic.woff2') format('woff2'),
+        url('ProzaDisplay-LightItalic.woff') format('woff'),
+        url('ProzaDisplay-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proza Display';
+    src: url('ProzaDisplay-ExtraBold.eot');
+    src: local('Proza Display ExtraBold'), local('ProzaDisplay-ExtraBold'),
+        url('ProzaDisplay-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('ProzaDisplay-ExtraBold.woff2') format('woff2'),
+        url('ProzaDisplay-ExtraBold.woff') format('woff'),
+        url('ProzaDisplay-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+

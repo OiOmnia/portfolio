@@ -1,0 +1,16 @@
+// custom classes
+.general-padding {
+  padding: 0rem 5rem;
+}
+.flx-col {
+  display: flex;
+  flex-direction: column;
+}
+.flx-row {
+  display: flex;
+  flex-direction: row;
+}
+.active {
+  border: 0.6mm solid var(--black);
+  border-radius: 70px;
+}
