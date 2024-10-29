@@ -95,7 +95,7 @@
   }
 }
 .general-padding {
-  padding: 0rem 5rem;
+  padding-inline: 7rem;
 }
 
 .flx-col {
@@ -118,24 +118,25 @@
   --black: #1e1e21;
   --green: #029757;
   --pink: #f296bd;
-  --blue: #99b7f5;
+  --purble: #99b7f5;
+  --purble: #b8afda;
   --12px: 0.75rem;
   --14px: 0.875rem;
   --16px: 1rem;
-  --18px: 1.125rem;
-  --20px: 1.25rem;
-  --24px: 1.5rem;
+  --18px: clamp(0.8rem, 0.5vw + 0.7rem, 1.125rem);
+  --20px: clamp(0.8rem, 1vw + 0.5rem, 1.25rem);
+  --24px: clamp(0.5rem, 0.5vw + 1rem, 1.5rem);
   --26px: 1.625rem;
-  --28px: 1.75rem;
+  --28px: clamp(0.5rem, 0.5vw + 1rem, 1.75rem);
   --30px: 1.875rem;
   --32px: 2rem;
-  --42px: 2.625rem;
+  --42px: clamp(0.7rem, 0.8vw + 1rem, 2.625rem);
   --60px: 3.75rem;
-  --80px: 5rem;
+  --80px: clamp(1rem, 4vw + 1rem, 5rem);
   --130px: 8.125rem;
-  --140px: 8.75rem;
-  --180px: 11.25rem;
-  --200px: 12.5rem;
+  --140px: clamp(5rem, 5vw + 1rem, 8.75rem);
+  --180px: clamp(3rem, 10vw + 1rem, 11.25rem);
+  --200px: clamp(3rem, 10vw + 1rem, 12.5rem);
 }
 
 html {
@@ -148,6 +149,11 @@ body {
   margin: 0;
   background-color: var(--white);
   overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 ul {
@@ -246,7 +252,7 @@ a {
   height: 50vh;
   padding-top: 17rem;
   padding-bottom: 5rem;
-  background-color: var(--blue);
+  background-color: var(--purble);
   justify-content: space-between;
 }
 
@@ -271,6 +277,7 @@ a {
 
 .services__item-txt {
   font-size: var(--18px);
+  line-height: 1.5;
 }
 
 .text-container {
@@ -315,7 +322,7 @@ a {
 }
 
 .project__txt {
-  width: 80vw;
+  width: 85vw;
 }
 
 .project-title {
@@ -338,6 +345,7 @@ a {
   justify-content: space-between;
   width: 100%;
   margin: 0;
+  padding: 0;
 }
 .project__info--deets > ul li {
   font-family: "Bricolage Grotesque", sans-serif;
@@ -381,7 +389,7 @@ a {
 }
 
 .footer-links {
-  background-color: var(--blue);
+  background-color: var(--purble);
   width: 100vw;
   height: 15%;
 }
@@ -403,6 +411,140 @@ a {
 }
 .footer-links > ul li a {
   color: var(--black);
+}
+
+@media (min-width: 1600px) {
+  /* Styles for X-large desktops or monitors */
+}
+@media (min-width: 1440px) {
+  /* Styles for large desktops or monitors */
+}
+@media (max-width: 1280px) {
+  /* Styles for medium-sized devices like tablets in landscape mode */
+  .general-padding {
+    padding-inline: 4rem;
+  }
+  .intro__skills {
+    width: 20%;
+  }
+}
+@media (max-width: 1024px) {
+  /* Styles for tablets in portrait mode */
+  .general-padding {
+    padding-inline: 3rem;
+  }
+  .nav-header__ul li {
+    padding: 0.7rem 2rem;
+  }
+  .intro {
+    flex-direction: column;
+  }
+  .intro__img {
+    width: 90px;
+    height: 90px;
+  }
+  .intro__text {
+    width: 90%;
+    padding-top: 3rem;
+  }
+  .intro__skills {
+    width: 25%;
+  }
+  .services {
+    padding-top: 10rem;
+  }
+}
+@media (max-width: 768px) {
+  /* Styles for small tablets or large smartphones */
+  .general-padding {
+    padding-inline: 1.5rem;
+  }
+  .header {
+    right: 1rem;
+    left: 1rem;
+  }
+  .intro {
+    justify-content: end;
+  }
+  .intro__skills {
+    width: 50%;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+  .intro__text {
+    padding-bottom: 3rem;
+  }
+  .intro__skills > h5 {
+    padding-left: 2rem;
+    margin: 0;
+  }
+  p {
+    letter-spacing: 0;
+  }
+  .text-container {
+    height: 7rem;
+  }
+  .project {
+    height: 100vh;
+  }
+}
+@media (max-width: 480px) {
+  /* Styles for smartphones */
+  .header {
+    justify-content: end;
+  }
+  .nav-header {
+    display: none;
+  }
+  .intro {
+    justify-content: center;
+  }
+  .intro__text {
+    width: 100%;
+  }
+  .intro__skills {
+    width: 85%;
+  }
+  .services {
+    flex-direction: column;
+    padding-top: 5rem;
+    height: fit-content;
+    row-gap: 3rem;
+  }
+  .services__item {
+    width: 100%;
+  }
+  .text-container {
+    height: 6rem;
+  }
+  .footer {
+    padding: 6rem 1rem 0rem;
+  }
+  .footer-CTA > h1 {
+    letter-spacing: 5px;
+  }
+}
+@media (max-width: 320px) {
+  /* Styles for small smartphones */
+  .flx-row {
+    flex-direction: column;
+  }
+  .intro__skills {
+    width: 100%;
+  }
+  .intro__skills > h5 {
+    padding-left: 1rem;
+    font-size: 0.6rem;
+  }
+  .project__info--deets > ul li {
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+  }
+  .footer-links > ul {
+    align-items: self-start;
+    justify-content: space-evenly;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

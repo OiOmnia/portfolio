@@ -10,26 +10,27 @@
   --black: #1e1e21;
   --green: #029757;
   --pink: #f296bd;
-  --blue: #99b7f5;
+  --purble: #99b7f5;
+  --purble: #b8afda;
 
   //   font-size
   --12px: 0.75rem;
   --14px: 0.875rem;
   --16px: 1rem;
-  --18px: 1.125rem;
-  --20px: 1.25rem;
-  --24px: 1.5rem;
+  --18px: clamp(0.8rem, 0.5vw + 0.7rem, 1.125rem);
+  --20px: clamp(0.8rem, 1vw + 0.5rem, 1.25rem);
+  --24px: clamp(0.5rem, 0.5vw + 1rem, 1.5rem);
   --26px: 1.625rem;
-  --28px: 1.75rem;
+  --28px: clamp(0.5rem, 0.5vw + 1rem, 1.75rem);
   --30px: 1.875rem;
   --32px: 2rem;
-  --42px: 2.625rem;
+  --42px: clamp(0.7rem, 0.8vw + 1rem, 2.625rem);
   --60px: 3.75rem;
-  --80px: 5rem;
+  --80px: clamp(1rem, 4vw + 1rem, 5rem);
   --130px: 8.125rem;
-  --140px: 8.75rem;
-  --180px: 11.25rem;
-  --200px: 12.5rem;
+  --140px: clamp(5rem, 5vw + 1rem, 8.75rem);
+  --180px: clamp(3rem, 10vw + 1rem, 11.25rem);
+  --200px: clamp(3rem, 10vw + 1rem, 12.5rem);
 }
 
 html {
@@ -41,6 +42,10 @@ body {
   margin: 0;
   background-color: var(--white);
   overflow-x: hidden;
+}
+img {
+  display: block;
+  max-width: 100%;
 }
 ul {
   list-style: none;
@@ -129,7 +134,7 @@ a {
   //   margin: 0rem 5rem;
   padding-top: 17rem;
   padding-bottom: 5rem;
-  background-color: var(--blue);
+  background-color: var(--purble);
   justify-content: space-between;
 }
 .services__item {
@@ -149,6 +154,7 @@ a {
 }
 .services__item-txt {
   font-size: var(--18px);
+  line-height: 1.5;
 }
 
 // the scrolling text
@@ -191,7 +197,7 @@ a {
   background-image: url("../img/projects/the-luupe.webp");
 }
 .project__txt {
-  width: 80vw;
+  width: 85vw;
 }
 .project-title {
   align-self: center;
@@ -210,6 +216,7 @@ a {
   justify-content: space-between;
   width: 100%;
   margin: 0;
+  padding: 0;
   li {
     font-family: "Bricolage Grotesque", sans-serif;
     font-size: var(--20px);
@@ -250,7 +257,7 @@ a {
   text-transform: uppercase;
 }
 .footer-links {
-  background-color: var(--blue);
+  background-color: var(--purble);
   width: 100vw;
   height: 15%;
 
@@ -275,3 +282,5 @@ a {
     }
   }
 }
+
+@import "./_responsive.scss";
