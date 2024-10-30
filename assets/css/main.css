@@ -98,6 +98,10 @@
   padding-inline: 7rem;
 }
 
+.xl-padding {
+  padding: 5rem 20rem;
+}
+
 .flx-col {
   display: flex;
   flex-direction: column;
@@ -111,6 +115,84 @@
 .active {
   border: 0.6mm solid var(--black);
   border-radius: 70px;
+}
+
+.line {
+  height: 1px;
+  background-color: var(--black);
+  width: 100%;
+}
+
+.parallax {
+  height: 110vh;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.sml-txt {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: var(--20px);
+  font-weight: 100;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+}
+
+.Xl-thin {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: var(--60px);
+  font-weight: 100;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  margin-block: auto;
+}
+
+.hight-100 {
+  height: 100vh;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.pad-30 {
+  padding-right: 30%;
+}
+
+.row-space-btw {
+  justify-content: space-between;
+}
+
+.p-big {
+  font-family: "Inter", sans-serif;
+  font-size: var(--42px);
+  line-height: 1.3;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.label {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: var(--20px);
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin-block: 20px;
+}
+
+.p-regular {
+  font-family: "Inter", sans-serif;
+  font-size: var(--20px);
+  line-height: 1.5;
+  font-weight: 300;
+  margin-block: 20px;
+}
+
+.site {
+  color: var(--black);
+  text-decoration: underline;
 }
 
 :root {
@@ -130,7 +212,7 @@
   --28px: clamp(0.5rem, 0.5vw + 1rem, 1.75rem);
   --30px: 1.875rem;
   --32px: 2rem;
-  --42px: clamp(0.7rem, 0.8vw + 1rem, 2.625rem);
+  --42px: clamp(0.7rem, 2vw + 1rem, 2.625rem);
   --60px: 3.75rem;
   --80px: clamp(1rem, 4vw + 1rem, 5rem);
   --130px: 8.125rem;
@@ -265,12 +347,6 @@ a {
   margin-top: 0;
 }
 
-.services__item-line {
-  height: 1px;
-  background-color: var(--black);
-  width: 100%;
-}
-
 .services__item-title {
   margin-bottom: 0;
 }
@@ -302,11 +378,6 @@ a {
   display: flex;
   align-items: self-start;
   padding-top: 15rem;
-  justify-content: center;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
 }
 
 .project.baisim {
@@ -348,12 +419,34 @@ a {
   padding: 0;
 }
 .project__info--deets > ul li {
-  font-family: "Bricolage Grotesque", sans-serif;
-  font-size: var(--20px);
-  font-weight: 100;
-  text-transform: capitalize;
   color: var(--white);
-  letter-spacing: 3px;
+}
+
+.project-intro {
+  width: 100%;
+  justify-content: end;
+}
+.project-intro p {
+  font-size: var(--28px);
+  margin-right: 50%;
+}
+
+.project-intro--title {
+  justify-content: space-between;
+  align-items: end;
+}
+.project-intro--title h1 {
+  margin: 0;
+  font-size: var(--180px);
+  font-weight: 400;
+}
+
+.baisim-mockup {
+  background-image: url("../img/projects/baisim-mockup.webp");
+}
+
+.project-info {
+  padding-block: 3rem;
 }
 
 .footer {
