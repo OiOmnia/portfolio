@@ -1,0 +1,95 @@
+// custom classes
+.main-pad-x {
+  padding-inline: 7rem;
+}
+.main-pad-y {
+  padding-block: 7rem;
+}
+.xl-padding {
+  padding: 5rem 20rem;
+}
+.flx-col {
+  display: flex;
+  flex-direction: column;
+}
+.flx-row {
+  display: flex;
+  flex-direction: row;
+}
+.active {
+  text-decoration: underline;
+}
+.line {
+  height: 1px;
+  background-color: var(--black);
+  width: 100%;
+}
+.parallax {
+  height: 110vh;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.sml-txt {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: var(--20px);
+  font-weight: 100;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+}
+.Xl-thin {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: var(--60px);
+  font-weight: 100;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  margin-block: 0;
+  line-height: 0.8;
+}
+.XL-h {
+  font-size: var(--180px);
+  letter-spacing: 2px;
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 0.8;
+}
+.hight-100 {
+  height: 100vh;
+}
+.width-100 {
+  width: 100%;
+}
+.pad-30 {
+  padding-right: 30%;
+}
+.row-space-btw {
+  justify-content: space-between;
+}
+.p-big {
+  font-family: "Inter", sans-serif;
+  font-size: var(--42px);
+  line-height: 1.3;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.label {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: var(--20px);
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin-block: 20px;
+}
+.p-regular {
+  font-family: "Inter", sans-serif;
+  font-size: var(--20px);
+  line-height: 1.5;
+  font-weight: 300;
+  margin-block: 20px;
+}
+.site {
+  color: var(--black);
+  text-decoration: underline;
+}

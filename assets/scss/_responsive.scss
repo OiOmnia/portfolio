@@ -1,0 +1,134 @@
+@media (min-width: 1600px) {
+  /* Styles for X-large desktops or monitors */
+}
+@media (min-width: 1440px) {
+  /* Styles for large desktops or monitors */
+}
+@media (max-width: 1280px) {
+  /* Styles for medium-sized devices like tablets in landscape mode */
+  .general-padding {
+    padding-inline: 4rem;
+  }
+  .intro__skills {
+    width: 20%;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* Styles for tablets in portrait mode */
+  .general-padding {
+    padding-inline: 3rem;
+  }
+  .nav-header__ul li {
+    padding: 0.7rem 2rem;
+  }
+  .intro {
+    flex-direction: column;
+  }
+  .intro__img {
+    width: 90px;
+    height: 90px;
+  }
+  .intro__text {
+    width: 90%;
+    padding-top: 3rem;
+  }
+  .intro__skills {
+    width: 25%;
+  }
+  .services {
+    padding-top: 10rem;
+  }
+}
+@media (max-width: 768px) {
+  /* Styles for small tablets or large smartphones */
+  .general-padding {
+    padding-inline: 1.5rem;
+  }
+  .header {
+    right: 1rem;
+    left: 1rem;
+  }
+  .intro {
+    justify-content: end;
+  }
+  .intro__skills {
+    width: 50%;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+  .intro__text {
+    padding-bottom: 3rem;
+  }
+  .intro__skills > h5 {
+    padding-left: 2rem;
+    margin: 0;
+  }
+  p {
+    letter-spacing: 0;
+  }
+  .text-container {
+    height: 7rem;
+  }
+  .project {
+    height: 100vh;
+  }
+}
+@media (max-width: 480px) {
+  /* Styles for smartphones */
+  .header {
+    justify-content: end;
+  }
+  .nav-header {
+    display: none;
+  }
+  .intro {
+    justify-content: center;
+  }
+  .intro__text {
+    width: 100%;
+  }
+  .intro__skills {
+    width: 85%;
+  }
+  .services {
+    flex-direction: column;
+    padding-top: 5rem;
+    height: fit-content;
+    row-gap: 3rem;
+  }
+  .services__item {
+    width: 100%;
+  }
+  .text-container {
+    height: 6rem;
+  }
+  .footer {
+    padding: 6rem 1rem 0rem;
+  }
+  .footer-CTA > h1 {
+    letter-spacing: 5px;
+  }
+}
+@media (max-width: 320px) {
+  /* Styles for small smartphones */
+  .flx-row {
+    flex-direction: column;
+  }
+  .intro__skills {
+    width: 100%;
+  }
+  .intro__skills > h5 {
+    padding-left: 1rem;
+    font-size: 0.6rem;
+  }
+  .project__info--deets > ul li {
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+  }
+  .footer-links > ul {
+    align-items: self-start;
+    justify-content: space-evenly;
+  }
+}

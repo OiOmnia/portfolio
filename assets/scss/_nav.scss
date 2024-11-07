@@ -1,0 +1,31 @@
+.header {
+  position: absolute;
+  right: 5rem;
+  left: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+}
+.nav-header__ul {
+  padding: 0;
+  list-style: none;
+
+  li {
+    padding: 1rem 2rem;
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+    font-size: var(--24px);
+
+    a {
+      text-decoration: none;
+      color: var(--black);
+    }
+  }
+}
+.logo {
+  font-family: "Inter", sans-serif;
+  color: var(--black);
+  font-weight: 800;
+  font-size: var(--30px);
+}

@@ -1,0 +1,42 @@
+.animatable {
+  /* initially hide animatable objects */
+  visibility: hidden;
+  /* initially pause animatable objects their animations */
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/* show objects being animated */
+.animated {
+  -webkit-animation: fadeInUp 1s;
+  animation: fadeInUp 1s;
+  visibility: visible;
+  transform-origin: 0 100%;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+}
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

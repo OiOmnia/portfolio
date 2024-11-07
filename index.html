@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.4.js"
+      integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"
+    ></script>
+    <script src="scripts/main.js"></script>
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <title>Omnia</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="nav-header">
+          <ul class="nav-header__ul flx-row">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="logo">Omnia.</div>
+      </div>
+      <div class="intro main-pad-x flx-row">
+        <h2 class="intro__text animatable">
+          <span> <div class="intro__img"></div> </span> Hi, It’s Omnia<br />- a
+          web developer + designer turning big ideas into clickable realities.
+        </h2>
+        <div class="intro__skills flx-col animatable">
+          <div>
+            <svg
+              class="spin"
+              id="spin"
+              width="100"
+              height="100"
+              viewBox="0 0 124 123"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_184_146)">
+                <path
+                  d="M67 11.3C63.7 11 62.6 8.50002 63 5.20002C63.4 1.80002 65 -0.299982 68.2 1.81515e-05C71.4 0.300018 72.6 2.80002 72.2 6.10002C71.9 9.60002 70.2 11.7 67 11.3ZM70.4 7.70002L70.8 4.40002C71 2.80002 69.7 1.60002 68.1 1.40002C66.5 1.20002 65 2.10002 64.8 3.70002L64.4 7.00002C64.2 8.60002 65.5 9.80002 67.1 10C68.8 10.2 70.2 9.30002 70.4 7.70002Z"
+                  fill="#28282B"
+                />
+                <path
+                  d="M78.3 2.10004L85.9 4.80004L85.4 6.00004L82.3 5.00004L79.1 14L77.7 13.5L80.9 4.50004L77.8 3.40004L78.3 2.10004Z"
+                  fill="#28282B"
+                />
+                <path
+                  d="M94 16.3L89.7 13.5L87 17.6L85.7 16.8L91.6 7.70001L93 8.50001L90.5 12.4L94.8 15.2L97.3 11.3L98.6 12.1L92.7 21.2L91.4 20.4L94 16.3Z"
+                  fill="#28282B"
+                />
+                <path
+                  d="M104.4 17.1L109.3 22.4L108.3 23.3L104.4 19.1L102 21.3L105.4 24.9L104.4 25.8L101 22.2L98.3999 24.6L102.3 28.8L101.3 29.7L96.3999 24.4L104.4 17.1Z"
+                  fill="#28282B"
+                />
+                <path
+                  d="M108.7 32.6L104.7 34.9001L104 33.6L113.5 28.3L115.5 31.9C116 32.9 116.3 33.8 116.1 34.5C115.9 35.3 115.3 35.9001 114.5 36.4001C113.7 36.9001 112.9 37.1 112.1 36.8C111.5 36.6 111 36.3 110.5 35.6L107.8 40.2001L106.9 38.7001L109.6 34.2001L108.7 32.6ZM111.4 34.7001C111.8 35.4001 112.5 35.5001 113.1 35.2001L114.1 34.6C114.7 34.2 114.9 33.6001 114.5 32.9001L113 30.2001L109.8 32L111.4 34.7001Z"
+                  fill="#28282B"
+                />
+                <path
+                  d="M119.5 50.4C118.5 50.6 118.2 51.1 118 52.4L117.8 54.2C117.6 56.1 116.9 57.3 115.1 57.6C113.2 57.9 111.7 56.2 111.4 54.1C111.1 51.9 111.8 49.9 114.1 49.4L114.3 50.9C112.9 51.3 112.4 52.4 112.6 53.9C112.8 55.3 113.6 56.3 114.7 56.2C115.6 56.1 116 55.5 116.2 54.3L116.5 52.1C116.7 50.3 117.6 49.3 119.1 49.1C120.7 48.9 122.2 50.1 122.5 52.4C122.8 54.5 122.1 56.2 119.9 56.7L119.7 55.2C121.1 54.9 121.4 53.7 121.2 52.6C121.1 51 120.4 50.3 119.5 50.4Z"
+                  fill="#28282B"
+                />
+                <path
+                  d="M118 64.4L122.7 69.3L122.5 71.1L117.8 66.1L111.6 70.6L111.8 68.8L118 64.4ZM112.2 63.9L112.3 62.4L123.1 63.3L123 64.8L112.2 63.9Z"
+                  fill="#28282B"
+                />
+                <path
+                  d="M121 77.3L120.6 78.8L110.1 75.9L110.5 74.4L121 77.3Z"
+                  fill="#28282B"
+                />
+                <path
+                  d="M118.3 85.5L117.6 86.9L109 82.8L106.9 87.2L105.7 86.6L108.5 80.8L118.3 85.5Z"
+                  fill="#28282B"
+                />
+                <path
+                  d="M112.1 96.6L111.2 97.8L103.6 92L100.6 95.9L99.5 95.1L103.4 90L112.1 96.6Z"
+                  fill="#28282B"
+                />
+                <path
+                  d="M101.4 104.8C100.7 104 100.1 104.1 98.8999 104.6L97.2999 105.4C95.4999 106.2 94.1999 106.3 92.9999 104.9C91.7999 103.4 92.3999 101.3 94.0999 99.9C95.7999 98.5 97.8999 98.1 99.4999 99.8L98.2999 100.8C97.1999 99.8 95.9999 100 94.8999 101C93.7999 102 93.2999 103.1 94.0999 104C94.6999 104.7 95.3999 104.8 96.4999 104.3L98.4999 103.4C100.2 102.6 101.4 102.8 102.5 104C103.6 105.2 103.2 107.2 101.5 108.6C99.8999 109.9 97.9999 110.3 96.3999 108.7L97.5999 107.7C98.5999 108.7 99.6999 108.3 100.6 107.6C101.7 106.6 102 105.6 101.4 104.8Z"
+                  fill="#28282B"
+                />
+                <path
+                  d="M80.3001 118.8L82.5001 114.5L74.0001 117.3L73.6001 116.1L82.1001 113.3L77.8001 111.1L79.6001 110.5L84.0001 112.8L84.4001 113.9L82.2001 118.3L80.3001 118.8Z"
+                  fill="#28282B"
+                />
+                <path
+                  d="M57 111.6C60.3 111.9 61.4 114.3 61.1 117.7C60.8 121.1 59.2 123.2 55.9 122.9C52.6 122.6 51.5 120.2 51.8 116.8C52.1 113.4 53.8 111.3 57 111.6ZM53.7 115.3L53.4 118.6C53.3 120.2 54.5 121.4 56.1 121.5C57.7 121.6 59.2 120.7 59.3 119.1L59.6 115.8C59.7 114.2 58.5 113 56.9 112.9C55.3 112.8 53.8 113.7 53.7 115.3Z"
+                  fill="#28282B"
+                />
+                <path
+                  d="M45.9001 121L38.3 118.5L38.7001 117.2L41.8 118.2L44.8 109.2L46.2001 109.7L43.2001 118.7L46.3 119.7L45.9001 121Z"
+                  fill="#28282B"
+                />
+                <path
+                  d="M29.8999 107.1L34.1999 109.8L36.7999 105.6L38.0999 106.4L32.2999 115.6L30.9999 114.8L33.3999 110.9L29.0999 108.2L26.6999 112.1L25.3999 111.3L31.1999 102.1L32.4999 102.9L29.8999 107.1Z"
+                  fill="#28282B"
+                />
+                <path
+                  d="M19.5 106.4L14.5 101.2L15.5 100.3L19.4 104.4L21.8 102.1L18.4 98.5L19.4 97.6L22.8 101.2L25.3 98.8L21.4 94.7L22.4 93.8L27.4 99L19.5 106.4Z"
+                  fill="#28282B"
+                />
+                <path
+                  d="M14.8999 91L18.8999 88.7L19.6999 90L10.2999 95.5L8.1999 92C7.5999 91 7.3999 90.1 7.5999 89.4C7.7999 88.6 8.2999 88 9.1999 87.5C9.9999 87 10.7999 86.8 11.5999 87C12.1999 87.1 12.6999 87.5 13.1999 88.1L15.7999 83.4L16.6999 84.9L13.9999 89.5L14.8999 91ZM12.1999 89C11.7999 88.3 11.0999 88.2 10.4999 88.6L9.4999 89.2C8.8999 89.6 8.6999 90.2 9.0999 90.9L10.6999 93.6L13.7999 91.8L12.1999 89Z"
+                  fill="#28282B"
+                />
+                <path
+                  d="M3.9 73.4C4.9 73.2 5.2 72.6 5.4 71.4L5.6 69.6C5.8 67.7 6.4 66.5 8.2 66.2C10.1 65.9 11.6 67.5 11.9 69.7C12.3 71.8 11.5 73.9 9.2 74.4L9 72.9C10.4 72.5 10.8 71.3 10.6 69.9C10.4 68.5 9.6 67.5 8.4 67.7C7.5 67.9 7.1 68.4 6.9 69.6L6.7 71.8C6.5 73.6 5.7 74.6 4.1 74.9C2.5 75.2 0.999996 73.9 0.699996 71.7C0.399996 69.6 1.1 67.9 3.2 67.3L3.4 68.8C2 69.2 1.8 70.3 1.9 71.5C2.2 72.8 3 73.6 3.9 73.4Z"
+                  fill="#28282B"
+                />
+                <path
+                  d="M11 59.8L10.9 61.3L0 60.6L0.1 59L11 59.8ZM5.2 59.4L0.5 54.5L0.6 52.6L5.3 57.5L11.4 52.9L11.3 54.8L5.2 59.4Z"
+                  fill="#28282B"
+                />
+                <path
+                  d="M1.8999 46.5L2.2999 45L12.7999 47.8L12.3999 49.3L1.8999 46.5Z"
+                  fill="#28282B"
+                />
+                <path
+                  d="M4.5 38.3L5.1 36.9L13.8 40.9L15.8 36.4L17 37L14.3 42.9L4.5 38.3Z"
+                  fill="#28282B"
+                />
+                <path
+                  d="M10.5 27.1L11.4 25.9L19.1 31.5L22 27.5L23.1 28.3L19.3 33.5L10.5 27.1Z"
+                  fill="#28282B"
+                />
+                <path
+                  d="M21.1 18.7C21.8 19.5 22.4 19.4 23.6 18.9L25.2 18.1C27 17.2 28.3 17.2 29.5 18.5C30.8 19.9 30.1 22.1 28.5 23.5C26.9 24.9 24.8 25.4 23.1 23.7L24.2 22.7C25.3 23.7 26.5 23.4 27.6 22.5C28.7 21.6 29.1 20.4 28.4 19.5C27.8 18.8 27.1 18.8 26 19.3L24 20.3C22.3 21.1 21.1 20.9 20 19.7C18.9 18.5 19.2 16.6 20.9 15.1C22.5 13.7 24.3 13.4 26 14.9L24.9 15.9C23.9 14.9 22.8 15.3 21.9 16.1C20.7 17 20.4 18 21.1 18.7Z"
+                  fill="#28282B"
+                />
+                <path
+                  d="M42.0001 4.40002L39.9001 8.70002L48.4001 5.80002L48.8001 7.00002L40.3001 10L44.6001 12.1L42.9001 12.7L38.5001 10.5L38.1001 9.40002L40.3001 5.00002L42.0001 4.40002Z"
+                  fill="#28282B"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_184_146">
+                  <rect width="124" height="123" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <h5>
+            Front-end development, animation, Photography and making a good camp
+            fire.
+          </h5>
+        </div>
+      </div>
+      <div class="services main-pad-x flx-row">
+        <div class="services__item flx-col">
+          <h2 class="services__item-num">01</h2>
+          <div class="line"></div>
+          <h3 class="services__item-title">Design</h3>
+          <p class="services__item-txt">
+            I create web designs that captivate your audience and deliver the
+            user experience you envision.
+          </p>
+        </div>
+        <div class="services__item flx-col">
+          <h2 class="services__item-num">02</h2>
+          <div class="line"></div>
+          <h3 class="services__item-title">Development</h3>
+          <p class="services__item-txt">
+            Bringing visuals to life through custom themes or by utilizing
+            front-end development tools.
+          </p>
+        </div>
+        <div class="services__item flx-col">
+          <h2 class="services__item-num">03</h2>
+          <div class="line"></div>
+          <h3 class="services__item-title">The Full Package</h3>
+          <p class="services__item-txt">
+            Arrive at the ideal balance for your website by reflecting your
+            brand identity and integrating fully functional features.
+          </p>
+        </div>
+      </div>
+      <div class="text-container">
+        <h1 class="off-screen-txt">
+          Work work work work work work work work work work work work work work
+          work work work work work work work work work work
+        </h1>
+      </div>
+      <div class="project parallax baisim">
+        <div class="project__txt flx-col">
+          <div class="project__info--deets flx-row">
+            <ul class="flx-row">
+              <li class="animatable sml-txt">(1/3)</li>
+              <li class="animatable sml-txt">UI Design + Development</li>
+              <li class="animatable sml-txt">2024</li>
+            </ul>
+          </div>
+          <div class="flx-col project-title">
+            <a href="https://baisim.pro"
+              ><h1 class="project-title__txt animatable">Baisim</h1></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="project parallax tiny-apt">
+        <div class="project__txt flx-col">
+          <div class="project__info--deets flx-row">
+            <ul class="flx-row">
+              <li class="animatable sml-txt">(2/3)</li>
+              <li class="animatable sml-txt">Development</li>
+              <li class="animatable sml-txt">2023</li>
+            </ul>
+          </div>
+          <div class="flx-col project-title">
+            <a href="https://christenebarberich.com/a-tiny-apt-1"
+              ><h1 class="project-title__txt animatable">Tiny Apt.</h1></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="project parallax luupe">
+        <div class="project__txt flx-col">
+          <div class="project__info--deets flx-row">
+            <ul class="flx-row">
+              <li class="animatable sml-txt">(3/3)</li>
+              <li class="animatable sml-txt">Development</li>
+              <li class="animatable sml-txt">2022</li>
+            </ul>
+          </div>
+          <div class="flx-col project-title">
+            <a href="https://theluupe.com/blog"
+              ><h1 class="project-title__txt animatable">The Luupe</h1></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="footer flx-col">
+        <div class="footer-CTA flx-col">
+          <h6 class="animatable">(connect)</h6>
+          <h1 class="animatable">Let's Talk</h1>
+        </div>
+        <div class="footer-links">
+          <ul class="flx-row main-pad-x">
+            <li><a href="#">It'somnia@gmail.com</a></li>
+            <li><a href="#">Behance</a></li>
+            <li><a href="#">Dev+Design By Omnia</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

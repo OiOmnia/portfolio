@@ -1,0 +1,332 @@
+/* components */
+@import "./_typography.scss";
+@import "./_nav.scss";
+@import "./_animation.scss";
+@import "./_classes.scss";
+
+:root {
+  // colors
+  --white: #efefef;
+  --black: #1e1e21;
+  --green: #029757;
+  --pink: #f296bd;
+  --purble: #99b7f5;
+  --purble: #b8afda;
+  --baisim-color: #6c946f;
+
+  //   font-size
+  --12px: 0.75rem;
+  --14px: 0.875rem;
+  --16px: 1rem;
+  --18px: clamp(0.8rem, 0.5vw + 0.7rem, 1.125rem);
+  --20px: clamp(0.8rem, 1vw + 0.5rem, 1.25rem);
+  --24px: clamp(0.5rem, 0.5vw + 1rem, 1.5rem);
+  --26px: 1.625rem;
+  --28px: clamp(0.5rem, 0.5vw + 1rem, 1.75rem);
+  --30px: 1.875rem;
+  --32px: 2rem;
+  --42px: clamp(0.7rem, 2vw + 1rem, 2.625rem);
+  --60px: 3.75rem;
+  --80px: clamp(1rem, 4vw + 1rem, 5rem);
+  --130px: 8.125rem;
+  --140px: clamp(5rem, 5vw + 1rem, 8.75rem);
+  --180px: clamp(3rem, 10vw + 1rem, 11.25rem);
+  --200px: clamp(3rem, 10vw + 1rem, 12.5rem);
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
+  background-color: var(--white);
+  overflow-x: hidden;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: var(--black);
+}
+h1 {
+  font-size: var(--130px);
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+h2 {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 500;
+  font-size: var(--80px);
+  line-height: 1;
+  text-transform: capitalize;
+}
+h3 {
+  font-family: "Inter", sans-serif;
+  font-size: var(--42px);
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+h4 {
+  font-family: "Inter", sans-serif;
+  font-size: var(--20px);
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+p {
+  font-family: "Inter", sans-serif;
+  letter-spacing: 1px;
+}
+a {
+  text-decoration: none;
+}
+
+// the intro section
+.intro {
+  padding-top: 8rem;
+  padding-bottom: 3rem;
+  height: 70vh;
+  justify-content: space-between;
+}
+.intro__text {
+  width: 80%;
+  margin: 0;
+  padding-top: 5rem;
+}
+.intro__img {
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/portrait.jpg");
+  border-radius: 50%;
+}
+.intro__skills {
+  width: 15%;
+  align-self: flex-end;
+}
+.spin {
+  transition: transform 0.5s ease-out;
+}
+.intro__skills > h5 {
+  font-size: var(--12px);
+  line-height: 1.5;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+
+// the services section
+.services {
+  height: 50vh;
+  //   margin: 0rem 5rem;
+  padding-top: 17rem;
+  padding-bottom: 5rem;
+  background-color: var(--purble);
+  justify-content: space-between;
+}
+.services__item {
+  width: 30%;
+  align-self: flex-start;
+}
+.services__item-num {
+  margin-top: 0;
+}
+
+.services__item-title {
+  margin-bottom: 0;
+}
+.services__item-txt {
+  font-size: var(--18px);
+  line-height: 1.5;
+}
+
+// the scrolling text
+.text-container {
+  position: relative;
+  height: 7rem;
+}
+.off-screen-txt {
+  position: absolute;
+  left: 0%;
+  margin: 0;
+  transition: left 1s ease-out;
+  //   padding: 2rem 0;
+  font-weight: 700;
+  font-size: var(--140px);
+  text-transform: capitalize;
+  white-space: nowrap;
+  font-family: "Inter", sans-serif;
+}
+
+// project
+.project {
+  height: 90vh;
+  display: flex;
+  align-items: self-start;
+  padding-top: 10rem;
+}
+.project.baisim {
+  background-image: url("../img/projects/baisim.webp");
+}
+.project.tiny-apt {
+  background-image: url("../img/projects/tiny-apt.webp");
+}
+.project.luupe {
+  background-image: url("../img/projects/the-luupe.webp");
+}
+.project__txt {
+  width: 85vw;
+}
+.project-title {
+  align-self: center;
+}
+.project-title__txt {
+  font-size: var(--200px);
+  color: var(--white);
+  letter-spacing: 4px;
+  font-weight: 500;
+  margin: 0;
+}
+.project__info--deets {
+  padding-bottom: 12rem;
+}
+.project__info--deets > ul {
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  li {
+    color: var(--white);
+  }
+}
+
+// the project page
+
+.project-intro {
+  width: 100%;
+  justify-content: end;
+
+  p {
+    font-size: var(--28px);
+    margin-right: 50%;
+  }
+}
+.project-intro--title {
+  justify-content: space-between;
+  align-items: end;
+  padding-bottom: 2rem;
+  h1 {
+    margin: 0;
+    font-size: var(--180px);
+    font-weight: 400;
+    line-height: 0.7;
+  }
+}
+.mockup {
+  height: 80vh;
+  background-color: var(--baisim-color);
+  position: relative;
+  padding-block: 10rem;
+  place-items: center;
+  display: flex;
+  justify-content: center;
+}
+.video-container {
+  width: 100%;
+}
+.vid {
+  width: inherit;
+  border-radius: 10px;
+}
+.project-info {
+  padding-block: 3rem;
+}
+.mockup-snippet {
+  background-color: var(--baisim-color);
+  row-gap: 5rem;
+  padding-block: 8rem;
+}
+.next-pro-wrap {
+  justify-content: end;
+  padding-bottom: 5rem;
+}
+.next-pro {
+  justify-content: space-between;
+  align-items: flex-end;
+  align-self: center;
+  width: 100%;
+}
+.credit {
+  padding-top: 5rem;
+}
+// the footer
+.footer {
+  height: 110vh;
+  background-color: var(--black);
+  padding: 6rem 5rem 0rem;
+  align-items: center;
+  justify-content: end;
+}
+.footer-CTA {
+  align-items: center;
+  padding-bottom: 18rem;
+}
+.footer-CTA > h6 {
+  font-family: "Inter", sans-serif;
+  color: var(--white);
+  font-size: var(--28px);
+  font-weight: 200;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.footer-CTA > h1 {
+  color: var(--white);
+  font-size: var(--180px);
+  font-weight: 400;
+  letter-spacing: 7px;
+  margin: 0;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.footer-links {
+  background-color: var(--purble);
+  width: 100vw;
+  height: 15%;
+
+  :hover {
+    background-color: var(--white);
+  }
+}
+.footer-links > ul {
+  height: 100%;
+  align-items: center;
+  margin: 0;
+  justify-content: space-between;
+
+  li {
+    font-family: "Inter", sans-serif;
+    font-size: var(--20px);
+    font-weight: 700;
+    text-transform: uppercase;
+
+    a {
+      color: var(--black);
+    }
+  }
+}
+
+@import "./_responsive.scss";

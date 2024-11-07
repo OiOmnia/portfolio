@@ -1,0 +1,27 @@
+{
+	"name": "portfoliosite-2024",
+	"version": "1.0.0",
+	"description": "protfolio",
+	"main": "index.js",
+	"scripts": {
+		"sass-dev": "sass --watch --update --style=expanded assets/scss:assets/css",
+		"sass-prod": "sass --no-source-map --style=compressed assets/scss:assets/css"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/OiOmnia/portfolio2023.git"
+	},
+	"author": "Omnia",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/OiOmnia/portfolio2023/issues"
+	},
+	"homepage": "https://github.com/OiOmnia/portfolio2023#readme",
+	"dependencies": {
+		"jquery": "^3.6.4",
+		"node-sass": "^8.0.0"
+	},
+	"devDependencies": {
+		"sass": "^1.79.4"
+	}
+}
