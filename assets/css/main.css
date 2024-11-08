@@ -94,6 +94,18 @@
     transform: translateY(0);
   }
 }
+.baisim-color {
+  background-color: var(--baisim-color);
+}
+
+.luupe-color {
+  background-color: var(--luupe-color);
+}
+
+.cb-color {
+  background-color: var(--cb-color);
+}
+
 .main-pad-x {
   padding-inline: 7rem;
 }
@@ -215,6 +227,8 @@
   --purble: #99b7f5;
   --purble: #b8afda;
   --baisim-color: #6c946f;
+  --luupe-color: #0a5bfc;
+  --cb-color: #fbdb06;
   --12px: 0.75rem;
   --14px: 0.875rem;
   --16px: 1rem;
@@ -458,7 +472,6 @@ a {
 
 .mockup {
   height: 80vh;
-  background-color: var(--baisim-color);
   position: relative;
   padding-block: 10rem;
   place-items: center;
@@ -480,7 +493,6 @@ a {
 }
 
 .mockup-snippet {
-  background-color: var(--baisim-color);
   row-gap: 5rem;
   padding-block: 8rem;
 }

@@ -13,6 +13,8 @@
   --purble: #99b7f5;
   --purble: #b8afda;
   --baisim-color: #6c946f;
+  --luupe-color: #0a5bfc;
+  --cb-color: #fbdb06;
 
   //   font-size
   --12px: 0.75rem;
@@ -238,7 +240,6 @@ a {
 }
 .mockup {
   height: 80vh;
-  background-color: var(--baisim-color);
   position: relative;
   padding-block: 10rem;
   place-items: center;
@@ -256,7 +257,6 @@ a {
   padding-block: 3rem;
 }
 .mockup-snippet {
-  background-color: var(--baisim-color);
   row-gap: 5rem;
   padding-block: 8rem;
 }
