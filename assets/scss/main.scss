@@ -3,7 +3,11 @@
 @import "./_nav.scss";
 @import "./_animation.scss";
 @import "./_classes.scss";
+@import "./_cursor.scss";
 
+* {
+  cursor: none;
+}
 :root {
   // colors
   --white: #efefef;
@@ -34,6 +38,7 @@
   --140px: clamp(5rem, 5vw + 1rem, 8.75rem);
   --180px: clamp(3rem, 10vw + 1rem, 11.25rem);
   --200px: clamp(3rem, 10vw + 1rem, 12.5rem);
+  --230px: 14.375rem;
 }
 
 html {
@@ -98,7 +103,7 @@ a {
 .intro {
   padding-top: 8rem;
   padding-bottom: 3rem;
-  height: 70vh;
+  height: 80vh;
   justify-content: space-between;
 }
 .intro__text {
@@ -231,18 +236,19 @@ a {
 .project-intro--title {
   justify-content: space-between;
   align-items: end;
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
   h1 {
     margin: 0;
-    font-size: var(--180px);
+    font-size: var(--230px);
     font-weight: 400;
     line-height: 0.7;
+    align-self: flex-start;
   }
 }
 .mockup {
   height: 80vh;
   position: relative;
-  padding-block: 10rem;
+  padding-block: 5rem;
   place-items: center;
   display: flex;
   justify-content: center;

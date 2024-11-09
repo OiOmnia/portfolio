@@ -1,0 +1,53 @@
+/* cursor */
+
+:root {
+  --main-circle-size: 16px;
+  --second-circle-size: 40px;
+}
+
+.circle-main {
+  position: absolute;
+  width: var(--main-circle-size);
+  height: var(--main-circle-size);
+  margin-top: calc(-1 * var(--main-circle-size) / 2);
+  margin-left: calc(-1 * var(--main-circle-size) / 2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--black);
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  transition: opacity 0.03s;
+  z-index: 100 !important;
+}
+
+.circle-hide {
+  opacity: 0;
+}
+
+.second-circle {
+  position: absolute;
+  transition: transform 0.15s, width 0.3s, height 0.3s, margin 0.3s;
+  width: var(--second-circle-size);
+  height: var(--second-circle-size);
+  top: 0;
+  left: 0;
+  margin-top: calc(-1 * var(--second-circle-size) / 2);
+  margin-left: calc(-1 * var(--second-circle-size) / 2);
+  background: var(--bpink);
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--blue);
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.circle-scale {
+  display: block;
+  width: calc(var(--second-circle-size) * 3);
+  height: calc(var(--second-circle-size) * 3);
+  margin-top: calc(-1 * var(--second-circle-size));
+  margin-left: calc(-1 * var(--second-circle-size));
+}
