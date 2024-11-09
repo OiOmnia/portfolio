@@ -313,6 +313,7 @@ p {
 
 a {
   text-decoration: none;
+  color: var(--black);
 }
 
 .intro {
