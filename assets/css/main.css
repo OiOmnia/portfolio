@@ -219,6 +219,63 @@
   text-decoration: underline;
 }
 
+/* cursor */
+:root {
+  --main-circle-size: 16px;
+  --second-circle-size: 40px;
+}
+
+.circle-main {
+  position: absolute;
+  width: var(--main-circle-size);
+  height: var(--main-circle-size);
+  margin-top: calc(-1 * var(--main-circle-size) / 2);
+  margin-left: calc(-1 * var(--main-circle-size) / 2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--black);
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  transition: opacity 0.03s;
+  z-index: 100 !important;
+}
+
+.circle-hide {
+  opacity: 0;
+}
+
+.second-circle {
+  position: absolute;
+  transition: transform 0.15s, width 0.3s, height 0.3s, margin 0.3s;
+  width: var(--second-circle-size);
+  height: var(--second-circle-size);
+  top: 0;
+  left: 0;
+  margin-top: calc(-1 * var(--second-circle-size) / 2);
+  margin-left: calc(-1 * var(--second-circle-size) / 2);
+  background: var(--bpink);
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--blue);
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.circle-scale {
+  display: block;
+  width: calc(var(--second-circle-size) * 3);
+  height: calc(var(--second-circle-size) * 3);
+  margin-top: calc(-1 * var(--second-circle-size));
+  margin-left: calc(-1 * var(--second-circle-size));
+}
+
+* {
+  cursor: none;
+}
+
 :root {
   --white: #efefef;
   --black: #1e1e21;
@@ -246,6 +303,7 @@
   --140px: clamp(5rem, 5vw + 1rem, 8.75rem);
   --180px: clamp(3rem, 10vw + 1rem, 11.25rem);
   --200px: clamp(3rem, 10vw + 1rem, 12.5rem);
+  --230px: 14.375rem;
 }
 
 html {
@@ -319,7 +377,7 @@ a {
 .intro {
   padding-top: 8rem;
   padding-bottom: 3rem;
-  height: 70vh;
+  height: 80vh;
   justify-content: space-between;
 }
 
@@ -462,19 +520,20 @@ a {
 .project-intro--title {
   justify-content: space-between;
   align-items: end;
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
 }
 .project-intro--title h1 {
   margin: 0;
-  font-size: var(--180px);
+  font-size: var(--230px);
   font-weight: 400;
   line-height: 0.7;
+  align-self: flex-start;
 }
 
 .mockup {
   height: 80vh;
   position: relative;
-  padding-block: 10rem;
+  padding-block: 5rem;
   place-items: center;
   display: flex;
   justify-content: center;

@@ -15,6 +15,7 @@ jQuery(document).ready(($) => {
     secondCircle.style.transform = `translate(${x}px, ${y}px)`;
     mainCircle.style.transform = `translate(${x}px, ${y}px)`;
 
+    // selecting all links
     let hoverables = document.querySelectorAll(".hoverable");
 
     Array.from(hoverables).forEach((hoverEl) => {
