@@ -12,7 +12,7 @@
   --pink: #f296bd;
   --purble: #99b7f5;
   --purble: #b8afda;
-  --baisim-color: #6c946f;
+  --baisim-color: #d0d4ca;
   --luupe-color: #0a5bfc;
   --cb-color: #fbdb06;
 
@@ -273,6 +273,9 @@ a {
 }
 .credit {
   padding-top: 5rem;
+  h3 {
+    padding-bottom: 5rem;
+  }
 }
 // the footer
 .footer {
