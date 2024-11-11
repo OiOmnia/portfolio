@@ -317,55 +317,45 @@ a {
   height: 100vh;
   position: relative;
   background-color: var(--white);
-  padding: 20rem 5rem 0rem;
+  padding-top: 20rem;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: flex-start;
 }
-.footer-CTA {
-  align-items: center;
-  padding-bottom: 18rem;
+.footer-logo {
+  width: 12vw;
+  padding-bottom: 2rem;
 }
-.footer-CTA > h6 {
-  font-family: "Inter", sans-serif;
-  color: var(--white);
-  font-size: var(--28px);
-  font-weight: 200;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
-.footer-CTA > h1 {
-  color: var(--white);
-  font-size: var(--180px);
+.email {
+  font-size: var(--32px);
   font-weight: 400;
-  letter-spacing: 7px;
+  font-family: "Bricolage Grotesque", sans-serif;
   margin: 0;
-  line-height: 1;
-  text-transform: uppercase;
 }
 .footer-links {
-  background-color: var(--purble);
-  width: 100vw;
-  height: 15%;
+  width: 100%;
+  padding-top: 10rem;
+  justify-content: space-between;
+  align-items: end;
 
-  :hover {
-    background-color: var(--white);
+  a {
+    font-size: var(--20px);
+    font-weight: 300;
+    font-family: "Bricolage Grotesque", sans-serif;
   }
 }
-.footer-links > ul {
-  height: 100%;
-  align-items: center;
-  margin: 0;
+.socials {
+  width: 20vw;
   justify-content: space-between;
+}
+.copyright {
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-size: var(--12px);
 
-  li {
-    font-family: "Inter", sans-serif;
-    font-size: var(--20px);
-    font-weight: 700;
-    text-transform: uppercase;
-
-    a {
-      color: var(--black);
-    }
+  a {
+    padding-left: 1rem;
+    text-decoration: underline;
   }
 }
 
