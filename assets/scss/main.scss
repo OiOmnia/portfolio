@@ -186,6 +186,18 @@ a {
   white-space: nowrap;
   font-family: "Inter", sans-serif;
 }
+// cards
+.panel {
+  height: 110vh;
+  width: 100%;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.panel.green {
+  margin-bottom: 400px;
+}
 
 // project
 .project {
@@ -293,6 +305,7 @@ a {
 // the footer
 .footer {
   height: 110vh;
+  position: relative;
   background-color: var(--black);
   padding: 6rem 5rem 0rem;
   align-items: center;

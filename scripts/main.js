@@ -97,7 +97,7 @@ jQuery(document).ready(($) => {
         triggerElement: slides[i],
       })
         .setPin(slides[i], { pushFollowers: false })
-        .addIndicators() // add indicators (requires plugin)
+        // .addIndicators() // add indicators (requires plugin)
         .addTo(controller);
     }
   });

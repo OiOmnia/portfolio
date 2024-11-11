@@ -138,7 +138,6 @@
 }
 
 .parallax {
-  height: 110vh;
   justify-content: center;
   background-size: cover;
   background-position: center;
@@ -193,6 +192,10 @@
 
 .row-space-btw {
   justify-content: space-between;
+}
+
+.row-space-cen {
+  justify-content: center;
 }
 
 .p-big {
@@ -476,6 +479,19 @@ a {
   font-family: "Inter", sans-serif;
 }
 
+.panel {
+  height: 110vh;
+  width: 100%;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.panel.green {
+  margin-bottom: 400px;
+}
+
 .project {
   height: 90vh;
   display: flex;
@@ -595,6 +611,7 @@ a {
 
 .footer {
   height: 110vh;
+  position: relative;
   background-color: var(--black);
   padding: 6rem 5rem 0rem;
   align-items: center;

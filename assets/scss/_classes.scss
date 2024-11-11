@@ -34,7 +34,6 @@
   width: 100%;
 }
 .parallax {
-  height: 110vh;
   justify-content: center;
   background-size: cover;
   background-position: center;
@@ -81,6 +80,9 @@
 }
 .row-space-btw {
   justify-content: space-between;
+}
+.row-space-cen {
+  justify-content: center;
 }
 .p-big {
   font-family: "Inter", sans-serif;

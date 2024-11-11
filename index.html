@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"
@@ -24,8 +22,10 @@
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <script src="scripts/main.js"></script>
-    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/normalize.css.map" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <title>Omnia</title>
@@ -122,7 +122,7 @@
           </h5>
         </div>
       </div>
-      <div class="flx-col main-pad-x main-pad-y">
+      <div class="flx-col row-space-cen hight-100 main-pad-x main-pad-y">
         <div>
           <svg
             class="spin"
@@ -279,64 +279,65 @@
           </p>
         </div>
       </div>
-      <div class="flx-col hight-100"></div>
+      <!-- <div class="flx-col hight-100"></div> -->
       <!-- <div class="text-container">
         <h1 class="off-screen-txt">
           Work work work work work work work work work work work work work work
           work work work work work work work work work work
         </h1>
       </div> -->
-      <div class="project parallax baisim">
-        <div class="project__txt flx-col">
-          <div class="project__info--deets flx-row">
-            <ul class="flx-row">
-              <li class="animatable sml-txt">(1/3)</li>
-              <li class="animatable sml-txt">UI Design + Development</li>
-              <li class="animatable sml-txt">2024</li>
-            </ul>
+      <div>
+        <section class="panel baisim">
+          <div class="main-pad-x main-pad-y flx-col">
+            <div class="project__info--deets flx-row">
+              <ul class="flx-row">
+                <li class="animatable sml-txt">(1/3)</li>
+                <li class="animatable sml-txt">UI Design + Development</li>
+                <li class="animatable sml-txt">2024</li>
+              </ul>
+            </div>
+            <div class="flx-col project-title">
+              <a class="hoverable" href="https://baisim.pro"
+                ><h1 class="project-title__txt animatable">Baisim</h1></a
+              >
+            </div>
           </div>
-          <div class="flx-col project-title">
-            <a class="hoverable" href="https://baisim.pro"
-              ><h1 class="project-title__txt animatable">Baisim</h1></a
-            >
+        </section>
+        <section class="panel tiny-apt">
+          <div class="main-pad-x main-pad-y flx-col">
+            <div class="project__info--deets flx-row">
+              <ul class="flx-row">
+                <li class="animatable sml-txt">(2/3)</li>
+                <li class="animatable sml-txt">Development</li>
+                <li class="animatable sml-txt">2023</li>
+              </ul>
+            </div>
+            <div class="flx-col project-title">
+              <a
+                class="hoverable"
+                href="https://christenebarberich.com/a-tiny-apt-1"
+                ><h1 class="project-title__txt animatable">Tiny Apt.</h1></a
+              >
+            </div>
           </div>
-        </div>
+        </section>
+        <section class="panel luupe">
+          <div class="main-pad-x main-pad-y flx-col">
+            <div class="project__info--deets flx-row">
+              <ul class="flx-row">
+                <li class="animatable sml-txt">(3/3)</li>
+                <li class="animatable sml-txt">Development</li>
+                <li class="animatable sml-txt">2022</li>
+              </ul>
+            </div>
+            <div class="flx-col project-title">
+              <a class="hoverable" href="https://theluupe.com/blog"
+                ><h1 class="project-title__txt animatable">The Luupe</h1></a
+              >
+            </div>
+          </div>
+        </section>
       </div>
-      <div class="project parallax tiny-apt">
-        <div class="project__txt flx-col">
-          <div class="project__info--deets flx-row">
-            <ul class="flx-row">
-              <li class="animatable sml-txt">(2/3)</li>
-              <li class="animatable sml-txt">Development</li>
-              <li class="animatable sml-txt">2023</li>
-            </ul>
-          </div>
-          <div class="flx-col project-title">
-            <a
-              class="hoverable"
-              href="https://christenebarberich.com/a-tiny-apt-1"
-              ><h1 class="project-title__txt animatable">Tiny Apt.</h1></a
-            >
-          </div>
-        </div>
-      </div>
-      <div class="project parallax luupe">
-        <div class="project__txt flx-col">
-          <div class="project__info--deets flx-row">
-            <ul class="flx-row">
-              <li class="animatable sml-txt">(3/3)</li>
-              <li class="animatable sml-txt">Development</li>
-              <li class="animatable sml-txt">2022</li>
-            </ul>
-          </div>
-          <div class="flx-col project-title">
-            <a class="hoverable" href="https://theluupe.com/blog"
-              ><h1 class="project-title__txt animatable">The Luupe</h1></a
-            >
-          </div>
-        </div>
-      </div>
-
       <div class="footer flx-col">
         <div class="footer-CTA flx-col">
           <h6 class="animatable">(connect)</h6>
