@@ -36,7 +36,8 @@
   --80px: clamp(1rem, 4vw + 1rem, 5rem);
   --110px: 6.875rem;
   --130px: 8.125rem;
-  --140px: clamp(5rem, 5vw + 1rem, 8.75rem);
+  --140px: clamp(5rem, 5vw + 3rem, 8.75rem);
+  --160px: 10rem;
   --180px: clamp(3rem, 10vw + 1rem, 11.25rem);
   --200px: clamp(3rem, 10vw + 1rem, 12.5rem);
   --230px: 14.375rem;
@@ -170,21 +171,30 @@ a {
 }
 
 // the scrolling text
+.sliding-txt {
+  padding-top: 3rem;
+}
 .text-container {
   position: relative;
-  height: 7rem;
+  height: 8rem;
 }
 .off-screen-txt {
   position: absolute;
-  left: 0%;
   margin: 0;
-  transition: left 1s ease-out;
-  //   padding: 2rem 0;
-  font-weight: 700;
   font-size: var(--140px);
-  text-transform: capitalize;
+  text-transform: uppercase;
   white-space: nowrap;
-  font-family: "Inter", sans-serif;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+.lft-scrl {
+  left: 0%;
+  transition: left 1s ease-out;
+  font-weight: 300;
+}
+.right-scrl {
+  right: -300vw;
+  transition: right 1s ease-out;
+  font-weight: 500;
 }
 // cards
 .panel {
@@ -304,12 +314,12 @@ a {
 }
 // the footer
 .footer {
-  height: 110vh;
+  height: 100vh;
   position: relative;
-  background-color: var(--black);
-  padding: 6rem 5rem 0rem;
+  background-color: var(--white);
+  padding: 20rem 5rem 0rem;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-start;
 }
 .footer-CTA {
   align-items: center;
