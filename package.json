@@ -19,7 +19,8 @@
 	"homepage": "https://github.com/OiOmnia/portfolio2023#readme",
 	"dependencies": {
 		"jquery": "^3.6.4",
-		"node-sass": "^8.0.0"
+		"node-sass": "^8.0.0",
+		"scrollmagic": "^2.0.8"
 	},
 	"devDependencies": {
 		"sass": "^1.79.4"

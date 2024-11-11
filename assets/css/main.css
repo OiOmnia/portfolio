@@ -29,7 +29,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1rem;
 }
 
 .nav-header__ul {
@@ -153,6 +152,13 @@
   font-weight: 100;
   text-transform: capitalize;
   letter-spacing: 3px;
+}
+
+.L-h {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: var(--110px);
+  font-weight: 100;
+  letter-spacing: 2px;
 }
 
 .Xl-thin {
@@ -299,6 +305,7 @@
   --42px: clamp(0.7rem, 2vw + 1rem, 2.625rem);
   --60px: 3.75rem;
   --80px: clamp(1rem, 4vw + 1rem, 5rem);
+  --110px: 6.875rem;
   --130px: 8.125rem;
   --140px: clamp(5rem, 5vw + 1rem, 8.75rem);
   --180px: clamp(3rem, 10vw + 1rem, 11.25rem);
@@ -378,11 +385,12 @@ a {
   padding-top: 8rem;
   padding-bottom: 3rem;
   height: 80vh;
-  justify-content: space-between;
+  justify-content: end;
 }
 
 .intro__text {
-  width: 80%;
+  font-size: var(--110px);
+  width: 90%;
   margin: 0;
   padding-top: 5rem;
 }
@@ -398,7 +406,7 @@ a {
 }
 
 .intro__skills {
-  width: 15%;
+  width: 25%;
   align-self: flex-end;
 }
 
@@ -407,20 +415,29 @@ a {
 }
 
 .intro__skills > h5 {
-  font-size: var(--12px);
+  font-size: var(--16px);
   line-height: 1.5;
   font-family: "Inter", sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 0;
 }
 
+.intro__p {
+  font-size: var(--42px);
+  text-indent: 7rem;
+  font-weight: 400;
+}
+
+.intro__p-container {
+  width: 70%;
+  align-self: end;
+}
+
 .services {
   height: 50vh;
-  padding-top: 17rem;
-  padding-bottom: 5rem;
-  background-color: var(--purble);
+  padding-top: 10rem;
   justify-content: space-between;
 }
 
@@ -466,15 +483,15 @@ a {
   padding-top: 10rem;
 }
 
-.project.baisim {
+.baisim {
   background-image: url("../img/projects/baisim.webp");
 }
 
-.project.tiny-apt {
+.tiny-apt {
   background-image: url("../img/projects/tiny-apt.webp");
 }
 
-.project.luupe {
+.luupe {
   background-image: url("../img/projects/the-luupe.webp");
 }
 
