@@ -16,7 +16,7 @@
   --pink: #f296bd;
   --purble: #99b7f5;
   --purble: #b8afda;
-  --baisim-color: #d0d4ca;
+  --baisim-color: #e4e0e1;
   --luupe-color: #0a5bfc;
   --cb-color: #fbdb06;
 
@@ -42,6 +42,19 @@
   --200px: clamp(3rem, 10vw + 1rem, 12.5rem);
   --230px: 14.375rem;
 }
+// dolors
+.color-light {
+  background-color: #c9c444;
+}
+.color-baisim {
+  background-color: var(--baisim-color);
+}
+.color-cb {
+  background-color: var(--cb-color);
+}
+.color-luupe {
+  background-color: var(--luupe-color);
+}
 
 html {
   width: 100%;
@@ -51,6 +64,7 @@ html {
 body {
   margin: 0;
   background-color: var(--white);
+  transition: background-color 0.7s ease;
   overflow-x: hidden;
 }
 img {
@@ -140,6 +154,7 @@ a {
   margin-bottom: 0;
 }
 .intro__p {
+  // color: var(--white);
   font-size: var(--42px);
   text-indent: 7rem;
   font-weight: 400;
@@ -149,10 +164,9 @@ a {
   align-self: end;
 }
 // the services section
+
 .services {
   height: 50vh;
-  padding-top: 10rem;
-  //   margin: 0rem 5rem;
   justify-content: space-between;
 }
 .services__item {
