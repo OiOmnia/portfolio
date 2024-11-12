@@ -49,6 +49,7 @@
 }
 .L-h {
   font-family: "Bricolage Grotesque", sans-serif;
+  text-transform: uppercase;
   font-size: var(--110px);
   font-weight: 100;
   letter-spacing: 2px;
@@ -75,11 +76,17 @@
 .width-100 {
   width: 100%;
 }
+.pad-t-0 {
+  padding-top: 0;
+}
 .pad-30 {
   padding-right: 30%;
 }
 .row-space-btw {
   justify-content: space-between;
+}
+.row-space-ard {
+  justify-content: space-around;
 }
 .row-space-cen {
   justify-content: center;
