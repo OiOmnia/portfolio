@@ -1,4 +1,12 @@
 jQuery(document).ready(($) => {
+  // nav active state
+  jQuery(function ($) {
+    $(".nav-header__ul li").click(function (e) {
+      e.preventDefault();
+      $(".nav-header__ul li.active").removeClass("active");
+      $(this).addClass("active");
+    });
+  });
   // cursor
   let mainCircle = document.createElement("div");
   mainCircle.classList.add("circle-main");

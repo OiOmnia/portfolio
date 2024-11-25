@@ -169,7 +169,7 @@
   font-family: "Bricolage Grotesque", sans-serif;
   font-size: var(--60px);
   font-weight: 100;
-  text-transform: capitalize;
+  text-transform: uppercase;
   letter-spacing: 3px;
   margin-block: 0;
   line-height: 0.8;
@@ -460,7 +460,7 @@ a {
 
 .intro__p {
   font-size: var(--42px);
-  text-indent: 7rem;
+  text-indent: 5rem;
   font-weight: 400;
 }
 
@@ -572,6 +572,9 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .panel.green {
@@ -586,15 +589,24 @@ a {
 }
 
 .baisim {
-  background-image: url("../img/projects/baisim.webp");
+  background-image: url("../img/projects/baisim.gif");
+}
+.baisim svg {
+  width: 50vw;
 }
 
 .tiny-apt {
-  background-image: url("../img/projects/tiny-apt.webp");
+  background-image: url("../img/projects/cb.gif");
+}
+.tiny-apt svg {
+  width: 70vw;
 }
 
 .luupe {
-  background-image: url("../img/projects/the-luupe.webp");
+  background-image: url("../img/projects/luupe.gif");
+}
+.luupe svg {
+  width: 60vw;
 }
 
 .project__txt {

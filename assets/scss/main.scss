@@ -156,7 +156,7 @@ a {
 .intro__p {
   // color: var(--white);
   font-size: var(--42px);
-  text-indent: 7rem;
+  text-indent: 5rem;
   font-weight: 400;
 }
 .intro__p-container {
@@ -257,6 +257,9 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .panel.green {
   margin-bottom: 400px;
@@ -270,13 +273,23 @@ a {
   padding-top: 10rem;
 }
 .baisim {
-  background-image: url("../img/projects/baisim.webp");
+  background-image: url("../img/projects/baisim.gif");
+
+  svg {
+    width: 50vw;
+  }
 }
 .tiny-apt {
-  background-image: url("../img/projects/tiny-apt.webp");
+  background-image: url("../img/projects/cb.gif");
+  svg {
+    width: 70vw;
+  }
 }
 .luupe {
-  background-image: url("../img/projects/the-luupe.webp");
+  background-image: url("../img/projects/luupe.gif");
+  svg {
+    width: 60vw;
+  }
 }
 .project__txt {
   width: 85vw;
