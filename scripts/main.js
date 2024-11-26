@@ -162,4 +162,23 @@ jQuery(document).ready(($) => {
       .end()
       .appendTo("#slideshow-two");
   }, 3000);
+
+  // animating services items
+  // init controller
+  var controller = new ScrollMagic.Controller(3);
+  // build scenes - services reveal
+  var revealElements = document.getElementsByClassName("digit");
+  let n = 0.9;
+  for (var i = 0; i < revealElements.length; i++) {
+    // create a scene for each element
+    new ScrollMagic.Scene({
+      triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
+      offset: 100, // start a little later
+      triggerHook: n,
+    })
+      .setClassToggle(revealElements[i], "visible") // add class toggle
+      // .addIndicators({ name: "digit " + (i + 1) }) // add indicators (requires plugin)
+      .addTo(controller);
+    n = n - 0.1;
+  }
 });

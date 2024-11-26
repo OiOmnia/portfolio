@@ -1,0 +1,48 @@
+// slideshow
+.slideshow {
+  position: relative;
+  width: 344px;
+  height: 180px;
+  padding: 10px;
+}
+.slideshow > div {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+.slide {
+  background-size: cover;
+  background-position: center;
+}
+.one-a {
+  background-image: url("../img/slideshow/one-a.png");
+}
+.one-b {
+  background-image: url("../img/slideshow/one-b.png");
+}
+.one-c {
+  background-image: url("../img/slideshow/one-c.png");
+}
+.one-d {
+  background-image: url("../img/slideshow/one-d.png");
+}
+.one-e {
+  background-image: url("../img/slideshow/one-e.png");
+}
+.two-a {
+  background-image: url("../img/slideshow/two-a.png");
+}
+.two-b {
+  background-image: url("../img/slideshow/two-b.png");
+}
+.two-c {
+  background-image: url("../img/slideshow/two-c.png");
+}
+.two-d {
+  background-image: url("../img/slideshow/two-d.png");
+}
+.two-e {
+  background-image: url("../img/slideshow/two-e.png");
+}
