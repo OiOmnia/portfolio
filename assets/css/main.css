@@ -388,6 +388,7 @@
   --180px: clamp(3rem, 10vw + 1rem, 11.25rem);
   --200px: clamp(3rem, 10vw + 1rem, 12.5rem);
   --230px: 14.375rem;
+  --250px: 15.625rem;
 }
 
 .color-light {
@@ -395,15 +396,15 @@
 }
 
 .color-baisim {
-  background-color: var(--baisim-color);
+  background-color: var(--baisim-color) !important;
 }
 
 .color-cb {
-  background-color: var(--cb-color);
+  background-color: var(--cb-color) !important;
 }
 
 .color-luupe {
-  background-color: var(--luupe-color);
+  background-color: var(--luupe-color) !important;
 }
 
 html {
@@ -691,21 +692,26 @@ a {
 
 .project-intro {
   width: 100%;
-  justify-content: end;
+  justify-content: space-between;
 }
 .project-intro p {
-  font-size: var(--28px);
-  margin-right: 50%;
+  font-size: var(--24px);
+  margin-left: 55%;
+  padding-top: 15rem;
+}
+
+.dot {
+  width: 15px;
 }
 
 .project-intro--title {
   justify-content: space-between;
   align-items: end;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
 }
 .project-intro--title h1 {
   margin: 0;
-  font-size: var(--230px);
+  font-size: var(--250px);
   font-weight: 400;
   line-height: 0.7;
   align-self: flex-start;
