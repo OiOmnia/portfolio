@@ -29,6 +29,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 100;
 }
 
 .header-logo {
@@ -132,7 +133,7 @@
 }
 
 .active {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
 .line {
@@ -810,6 +811,18 @@ a {
 .copyright a {
   padding-left: 1rem;
   text-decoration: underline;
+}
+
+.featured-title {
+  padding-block: 18vw 3vw;
+  align-items: end;
+}
+.featured-title h1 {
+  line-height: 0.8;
+  margin: 0;
+  font-size: var(--250px);
+  font-weight: 400;
+  align-self: flex-start;
 }
 
 @media (min-width: 1600px) {

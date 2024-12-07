@@ -26,7 +26,7 @@
   flex-direction: row;
 }
 .active {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 .line {
   height: 1px;

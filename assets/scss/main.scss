@@ -425,4 +425,18 @@ a {
   }
 }
 
+// Work page
+.featured-title {
+  padding-block: 18vw 3vw;
+  align-items: end;
+
+  h1 {
+    line-height: 0.8;
+    margin: 0;
+    font-size: var(--250px);
+    font-weight: 400;
+    align-self: flex-start;
+  }
+}
+
 @import "./_responsive.scss";

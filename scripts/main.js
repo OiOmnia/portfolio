@@ -1,12 +1,11 @@
 jQuery(document).ready(($) => {
   // nav active state
-  // jQuery(function ($) {
-  //   $(".nav-header__ul li").click(function (e) {
-  //     e.preventDefault();
-  //     $(".nav-header__ul li.active").removeClass("active");
-  //     $(this).addClass("active");
-  //   });
-  // });
+  let activePage = window.location.pathname;
+  let navLinks = document.querySelectorAll(".nav-link a").forEach((link) => {
+    if (link.href.includes(`${activePage}`)) {
+      link.classList.add("active");
+    }
+  });
   // cursor
   let mainCircle = document.createElement("div");
   mainCircle.classList.add("circle-main");
