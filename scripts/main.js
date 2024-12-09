@@ -45,7 +45,7 @@ jQuery(document).ready(($) => {
     jQuery(".lft-scrl").css("left", Math.max(0 - 0.03 * window.scrollY) + "vw");
     jQuery(".right-scrl").css(
       "right",
-      Math.max(0 - 0.9 * (window.scrollY / 30)) + "vw"
+      Math.max(0 - 0.9 * (window.scrollY / 20)) + "vw"
     );
   });
 

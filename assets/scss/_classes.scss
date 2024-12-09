@@ -17,6 +17,9 @@
 .xl-padding {
   padding: 5rem 20rem;
 }
+.pad-top-header {
+  padding-top: 18rem;
+}
 .flx-col {
   display: flex;
   flex-direction: column;
@@ -63,6 +66,13 @@
   margin-block: 0;
   line-height: 0.8;
 }
+.L-h1-bold {
+  font-size: var(--140px);
+  text-transform: capitalize;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0;
+}
 .XL-h {
   font-size: var(--180px);
   letter-spacing: 2px;
@@ -81,6 +91,9 @@
 }
 .pad-30 {
   padding-right: 30%;
+}
+.pad-lft-double {
+  padding-left: 7rem;
 }
 .row-space-btw {
   justify-content: space-between;

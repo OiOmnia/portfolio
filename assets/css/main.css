@@ -33,7 +33,7 @@
 }
 
 .header-logo {
-  width: 8rem;
+  width: 7rem;
 }
 
 .nav-header__ul {
@@ -44,7 +44,7 @@
   padding: 1rem 2rem;
   font-family: "Inter", sans-serif;
   text-transform: uppercase;
-  font-size: var(--24px);
+  font-size: var(--20px);
 }
 .nav-header__ul li a {
   text-decoration: none;
@@ -122,6 +122,10 @@
   padding: 5rem 20rem;
 }
 
+.pad-top-header {
+  padding-top: 18rem;
+}
+
 .flx-col {
   display: flex;
   flex-direction: column;
@@ -176,6 +180,14 @@
   line-height: 0.8;
 }
 
+.L-h1-bold {
+  font-size: var(--140px);
+  text-transform: capitalize;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0;
+}
+
 .XL-h {
   font-size: var(--180px);
   letter-spacing: 2px;
@@ -198,6 +210,10 @@
 
 .pad-30 {
   padding-right: 30%;
+}
+
+.pad-lft-double {
+  padding-left: 7rem;
 }
 
 .row-space-btw {
@@ -364,8 +380,9 @@
   --black: #1e1e21;
   --green: #029757;
   --pink: #f296bd;
-  --purble: #99b7f5;
+  --blue: #99b7f5;
   --purble: #b8afda;
+  --purble-light: #e5e6f8;
   --baisim-color: #379777;
   --luupe-color: #0a5bfc;
   --cb-color: #fbdb06;
@@ -384,7 +401,7 @@
   --80px: clamp(1rem, 4vw + 1rem, 5rem);
   --110px: 6.875rem;
   --130px: 8.125rem;
-  --140px: clamp(5rem, 5vw + 3rem, 8.75rem);
+  --140px: clamp(5rem, 5vw + 4rem, 8.75rem);
   --160px: 10rem;
   --180px: clamp(3rem, 10vw + 1rem, 11.25rem);
   --200px: clamp(3rem, 10vw + 1rem, 12.5rem);
@@ -392,8 +409,21 @@
   --250px: 15.625rem;
 }
 
-.color-light {
+.color-dark {
+  background-color: var(--black) !important;
+  color: var(--black);
+}
+
+.color-white {
+  color: var(--white);
+}
+
+.color-yellow {
   background-color: #c9c444;
+}
+
+.light-purble {
+  background-color: var(--purble-light) !important;
 }
 
 .color-baisim {
@@ -478,9 +508,7 @@ a {
 }
 
 .intro {
-  padding-top: 8rem;
   padding-bottom: 3rem;
-  height: 80vh;
   justify-content: end;
 }
 
@@ -517,7 +545,7 @@ a {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .intro__p {
@@ -698,7 +726,7 @@ a {
 .project-intro p {
   font-size: var(--24px);
   margin-left: 55%;
-  padding-top: 15rem;
+  padding-block: 5rem;
 }
 
 .dot {
@@ -814,15 +842,24 @@ a {
 }
 
 .featured-title {
-  padding-block: 18vw 3vw;
+  padding-bottom: 5vw;
   align-items: end;
+  justify-content: space-between;
 }
 .featured-title h1 {
   line-height: 0.8;
   margin: 0;
-  font-size: var(--250px);
+  font-size: var(--140px);
   font-weight: 400;
   align-self: flex-start;
+}
+
+.about-grid {
+  display: grid;
+}
+
+.portrait-img-wrapper img {
+  max-width: 440px;
 }
 
 @media (min-width: 1600px) {

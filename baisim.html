@@ -1,324 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-3.6.4.js"
-      integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-    <script src="scripts/main.js"></script>
-    <link rel="stylesheet" href="assets/css/normalize.css.map" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <title>Omnia</title>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicon_io/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon_io/favicon-16x16.png"
-    />
-    <link rel="manifest" href="favicon_io/site.webmanifest" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="header">
-        <div class="nav-header">
-          <ul class="nav-header__ul flx-row">
-            <li class="nav-link hoverable"><a href="index.html">Home</a></li>
-            <li class="nav-link hoverable"><a href="./work.html">Work</a></li>
-            <li class="nav-link hoverable"><a href="./about.html">About</a></li>
-            <li class="nav-link hoverable">
-              <a href="./contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-        <div class="logo">
-          <svg
-            class="header-logo"
-            viewBox="0 0 188 53"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M34.0473 0.406862C34.0473 0.406862 29.841 1.21946 26.9989 3.41602C22.6932 6.74261 12.9022 16.4557 11.6943 37.4691C11.538 40.237 11.3674 42.9922 12.0922 45.7094C12.2911 46.4204 12.5469 47.1314 12.888 47.7916C14.6358 51.2071 18.7569 51.8039 21.4853 49.0613C23.1053 47.4361 23.9437 45.4046 24.4979 43.2589C25.3932 39.818 25.5353 36.301 25.2226 32.7966C24.8958 29.0383 24.299 25.3055 23.9011 21.5599C23.5032 17.6873 23.6311 13.8402 24.7821 10.0819C25.4642 7.85994 26.53 5.85383 28.221 4.19053C31.9584 0.508437 37.5289 0.203712 41.9484 3.42872C45.4015 5.94271 47.5046 9.38356 48.5562 13.345C51.4694 24.4167 48.9399 34.2568 41.0247 42.6875C36.9178 47.0552 31.9016 50.0898 25.9474 51.4864C15.8722 53.8608 6.49325 48.6169 2.47169 40.3005C-0.526722 34.0917 -0.697248 27.6798 1.42011 21.2552C3.46642 15.0464 6.8343 10.958 8.35482 9.32008C9.9606 7.606 13.2858 4.12705 18.9274 1.91779C25.4216 -0.634283 31.2621 -0.0629227 34.0473 0.406862ZM21.8974 49.9374C21.8974 49.9374 21.9684 50.039 21.9969 50.0898C22.679 49.5692 23.4037 49.0867 24.0432 48.5281C25.9474 46.8394 27.3826 44.7825 28.5763 42.5859C32.6831 35.0694 35.6815 27.1465 37.4721 18.8047C38.1826 15.5035 38.6089 12.1769 38.2821 8.79951C38.1257 7.21239 37.8131 5.66337 36.861 4.3175C35.8379 2.85736 34.2463 2.2733 32.4842 2.73039C31.93 2.88276 31.3616 3.08591 30.85 3.35254C28.4768 4.62223 27.0416 6.66643 26.0895 9.05344C24.6258 12.7101 24.3842 16.5319 24.7111 20.3918C24.9668 23.312 25.4358 26.2196 25.7626 29.1526C26.2174 33.3299 26.3879 37.5199 25.6916 41.6844C25.18 44.7571 24.2279 47.6647 21.869 49.9374H21.8974Z"
-              fill="#1E1E21"
-            />
-            <path
-              d="M177.587 35.4976C178.014 35.3127 178.412 35.0993 178.797 34.8574L177.474 34.5587C177.474 34.5587 177.545 34.9143 177.587 35.4976ZM177.587 35.5118C177.175 35.6968 176.734 35.8533 176.279 35.9955C175.368 36.2658 174.429 36.4934 173.476 36.6499C172.566 36.8064 171.641 36.9914 170.73 37.1905C169.848 37.347 169.052 37.5604 168.34 37.8449C167.657 38.1152 167.117 38.4993 166.719 38.983C166.32 39.4525 166.078 40.1211 166.121 40.9462C166.32 43.9195 168.995 44.6024 170.19 44.6593C174.23 44.8442 176.108 42.2835 176.563 41.5295C177.73 39.5663 177.701 36.9202 177.587 35.5118ZM168.539 50.9188C167.871 50.9615 161.099 51.2033 158.738 46.338C157.201 43.1371 158.225 39.3956 159.022 38.0868C159.349 37.532 159.762 37.0625 159.762 37.0625C160.388 36.3369 161.156 35.7395 162.067 35.27C163.418 34.5587 165.04 33.9754 166.903 33.5344C167.231 33.449 167.558 33.3779 167.914 33.2925C169.535 32.9227 171.328 32.5812 173.305 32.2825C174.458 32.0833 175.411 31.9126 176.165 31.7419C176.961 31.5427 177.559 31.244 177.957 30.8456C178.356 30.4473 178.555 29.8782 178.555 29.1243C178.555 28.1284 178.199 27.2606 177.488 26.5493C176.762 25.838 175.61 25.4681 174.017 25.4681C172.907 25.4681 171.883 25.6673 170.972 26.0656C170.09 26.464 169.336 27.0472 168.696 27.8012C168.07 28.5552 167.586 29.4799 167.273 30.5469L158.78 28.0431C159.307 26.3644 160.018 24.9133 160.928 23.6756C161.896 22.4522 163.02 21.4279 164.343 20.6312C165.652 19.7919 167.145 19.1944 168.824 18.8387C170.531 18.4404 172.352 18.2412 174.258 18.2412C177.445 18.2412 180.034 18.7676 182.026 19.7919C184.06 20.7877 185.554 22.3668 186.507 24.515C187.503 26.6347 188.001 29.3519 188.001 32.7093L187.944 50.6343H180.817V43.3362C180.674 43.8199 179.92 50.4351 168.539 50.9188Z"
-              fill="#1E1E21"
-            />
-            <path
-              d="M177.472 34.5586L178.795 34.8574C178.411 35.0992 178.012 35.3126 177.586 35.4976C177.543 34.9143 177.472 34.5586 177.472 34.5586Z"
-              fill="#1E1E21"
-            />
-            <path
-              d="M116.5 28.3417C116.557 27.7442 117.169 22.196 122.062 19.2654C126.487 16.6051 131.807 17.672 134.994 19.9909C135.222 20.1616 136.203 20.8303 137.185 22.1248C139.134 24.714 140.101 28.8396 140.101 34.5016V50.6342H130.427V35.5686C130.427 32.3108 129.944 29.935 128.99 28.4555C128.08 26.9475 126.7 26.1935 124.865 26.1935C123.357 26.1935 122.105 26.6488 121.109 27.5593C120.512 28.1425 120.014 28.8254 119.601 29.6363L116.5 28.3417Z"
-              fill="#1E1E21"
-            />
-            <path
-              d="M116.5 28.3417L119.601 29.6363C119.345 30.12 119.131 30.6466 118.961 31.2156C118.477 32.7236 118.235 34.4165 118.235 36.2944V50.6344H108.618V19.0807H116.386L116.5 28.3417Z"
-              fill="#1E1E21"
-            />
-            <path
-              d="M86.6812 27.6873C86.1264 28.2136 85.657 28.868 85.2586 29.6505L82.3422 28.3417C82.769 26.4354 83.4946 24.6144 84.5331 23.0495C85.5716 21.4846 86.9231 20.1758 88.616 19.2796C92.329 17.0887 97.1375 18.5967 98.4463 19.3223C99.7978 19.9909 100.922 21.0294 101.789 22.4236C102.714 23.7751 103.383 25.4964 103.824 27.5592C104.265 29.5936 104.478 31.9694 104.478 34.6723V50.6341H94.8044V35.8673C94.8044 33.7619 94.6195 32.012 94.2638 30.6179C93.9508 29.2237 93.4245 28.1852 92.7131 27.5023C91.9876 26.791 91.0771 26.4354 89.9675 26.4354C88.6871 26.4354 87.5917 26.8479 86.6812 27.6873Z"
-              fill="#1E1E21"
-            />
-            <path
-              d="M61.6409 28.3418C61.9112 27.2037 62.7648 24.6714 64.5431 22.4379C66.3214 20.2044 69.0243 18.2412 72.9935 18.2412C74.8286 18.2412 76.3366 18.6395 77.5316 19.4362C81.6999 21.7266 82.0982 26.1509 82.3401 28.3418L85.2564 29.6506C85.0288 30.12 84.8154 30.6464 84.6447 31.2155C84.161 32.6808 83.9192 34.3594 83.9192 36.2231V50.6342H74.4872V36.0524C74.4872 33.8615 74.288 32.069 73.8897 30.6749C73.5341 29.2807 72.965 28.228 72.211 27.5024C71.4997 26.7911 70.575 26.4355 69.4654 26.4355C68.185 26.4355 67.118 26.848 66.236 27.6874C65.6954 28.2137 65.2259 28.8681 64.8276 29.6506L61.6409 28.3418Z"
-              fill="#1E1E21"
-            />
-            <path
-              d="M61.6422 28.3422L64.8289 29.651C64.5871 30.1204 64.3879 30.6468 64.203 31.2159C63.7762 32.6812 63.5486 34.3598 63.5486 36.2235V50.6346H53.9316V19.0809H61.5142L61.6422 28.3422Z"
-              fill="#1E1E21"
-            />
-            <path
-              d="M153.871 19.0376H144.24V50.5914H153.871V19.0376Z"
-              fill="#1E1E21"
-            />
-            <path
-              d="M149.046 14.6717C151.561 14.6717 153.599 12.6335 153.599 10.1193C153.599 7.60507 151.561 5.56689 149.046 5.56689C146.532 5.56689 144.494 7.60507 144.494 10.1193C144.494 12.6335 146.532 14.6717 149.046 14.6717Z"
-              fill="#1E1E21"
-            />
-          </svg>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.js"
+    integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src="scripts/main.js"></script>
+  <link rel="stylesheet" href="assets/css/normalize.css.map" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <title>Omnia</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
+  <link rel="manifest" href="favicon_io/site.webmanifest" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="nav-header">
+        <ul class="nav-header__ul flx-row">
+          <li class="nav-link hoverable"><a href="index.html">Home</a></li>
+          <li class="nav-link hoverable"><a href="./work.html">Work</a></li>
+          <li class="nav-link hoverable"><a href="./about.html">About</a></li>
+          <li class="nav-link hoverable">
+            <a href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="logo">
+        <svg class="header-logo" viewBox="0 0 188 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M34.0473 0.406862C34.0473 0.406862 29.841 1.21946 26.9989 3.41602C22.6932 6.74261 12.9022 16.4557 11.6943 37.4691C11.538 40.237 11.3674 42.9922 12.0922 45.7094C12.2911 46.4204 12.5469 47.1314 12.888 47.7916C14.6358 51.2071 18.7569 51.8039 21.4853 49.0613C23.1053 47.4361 23.9437 45.4046 24.4979 43.2589C25.3932 39.818 25.5353 36.301 25.2226 32.7966C24.8958 29.0383 24.299 25.3055 23.9011 21.5599C23.5032 17.6873 23.6311 13.8402 24.7821 10.0819C25.4642 7.85994 26.53 5.85383 28.221 4.19053C31.9584 0.508437 37.5289 0.203712 41.9484 3.42872C45.4015 5.94271 47.5046 9.38356 48.5562 13.345C51.4694 24.4167 48.9399 34.2568 41.0247 42.6875C36.9178 47.0552 31.9016 50.0898 25.9474 51.4864C15.8722 53.8608 6.49325 48.6169 2.47169 40.3005C-0.526722 34.0917 -0.697248 27.6798 1.42011 21.2552C3.46642 15.0464 6.8343 10.958 8.35482 9.32008C9.9606 7.606 13.2858 4.12705 18.9274 1.91779C25.4216 -0.634283 31.2621 -0.0629227 34.0473 0.406862ZM21.8974 49.9374C21.8974 49.9374 21.9684 50.039 21.9969 50.0898C22.679 49.5692 23.4037 49.0867 24.0432 48.5281C25.9474 46.8394 27.3826 44.7825 28.5763 42.5859C32.6831 35.0694 35.6815 27.1465 37.4721 18.8047C38.1826 15.5035 38.6089 12.1769 38.2821 8.79951C38.1257 7.21239 37.8131 5.66337 36.861 4.3175C35.8379 2.85736 34.2463 2.2733 32.4842 2.73039C31.93 2.88276 31.3616 3.08591 30.85 3.35254C28.4768 4.62223 27.0416 6.66643 26.0895 9.05344C24.6258 12.7101 24.3842 16.5319 24.7111 20.3918C24.9668 23.312 25.4358 26.2196 25.7626 29.1526C26.2174 33.3299 26.3879 37.5199 25.6916 41.6844C25.18 44.7571 24.2279 47.6647 21.869 49.9374H21.8974Z"
+            fill="#1E1E21" />
+          <path
+            d="M177.587 35.4976C178.014 35.3127 178.412 35.0993 178.797 34.8574L177.474 34.5587C177.474 34.5587 177.545 34.9143 177.587 35.4976ZM177.587 35.5118C177.175 35.6968 176.734 35.8533 176.279 35.9955C175.368 36.2658 174.429 36.4934 173.476 36.6499C172.566 36.8064 171.641 36.9914 170.73 37.1905C169.848 37.347 169.052 37.5604 168.34 37.8449C167.657 38.1152 167.117 38.4993 166.719 38.983C166.32 39.4525 166.078 40.1211 166.121 40.9462C166.32 43.9195 168.995 44.6024 170.19 44.6593C174.23 44.8442 176.108 42.2835 176.563 41.5295C177.73 39.5663 177.701 36.9202 177.587 35.5118ZM168.539 50.9188C167.871 50.9615 161.099 51.2033 158.738 46.338C157.201 43.1371 158.225 39.3956 159.022 38.0868C159.349 37.532 159.762 37.0625 159.762 37.0625C160.388 36.3369 161.156 35.7395 162.067 35.27C163.418 34.5587 165.04 33.9754 166.903 33.5344C167.231 33.449 167.558 33.3779 167.914 33.2925C169.535 32.9227 171.328 32.5812 173.305 32.2825C174.458 32.0833 175.411 31.9126 176.165 31.7419C176.961 31.5427 177.559 31.244 177.957 30.8456C178.356 30.4473 178.555 29.8782 178.555 29.1243C178.555 28.1284 178.199 27.2606 177.488 26.5493C176.762 25.838 175.61 25.4681 174.017 25.4681C172.907 25.4681 171.883 25.6673 170.972 26.0656C170.09 26.464 169.336 27.0472 168.696 27.8012C168.07 28.5552 167.586 29.4799 167.273 30.5469L158.78 28.0431C159.307 26.3644 160.018 24.9133 160.928 23.6756C161.896 22.4522 163.02 21.4279 164.343 20.6312C165.652 19.7919 167.145 19.1944 168.824 18.8387C170.531 18.4404 172.352 18.2412 174.258 18.2412C177.445 18.2412 180.034 18.7676 182.026 19.7919C184.06 20.7877 185.554 22.3668 186.507 24.515C187.503 26.6347 188.001 29.3519 188.001 32.7093L187.944 50.6343H180.817V43.3362C180.674 43.8199 179.92 50.4351 168.539 50.9188Z"
+            fill="#1E1E21" />
+          <path
+            d="M177.472 34.5586L178.795 34.8574C178.411 35.0992 178.012 35.3126 177.586 35.4976C177.543 34.9143 177.472 34.5586 177.472 34.5586Z"
+            fill="#1E1E21" />
+          <path
+            d="M116.5 28.3417C116.557 27.7442 117.169 22.196 122.062 19.2654C126.487 16.6051 131.807 17.672 134.994 19.9909C135.222 20.1616 136.203 20.8303 137.185 22.1248C139.134 24.714 140.101 28.8396 140.101 34.5016V50.6342H130.427V35.5686C130.427 32.3108 129.944 29.935 128.99 28.4555C128.08 26.9475 126.7 26.1935 124.865 26.1935C123.357 26.1935 122.105 26.6488 121.109 27.5593C120.512 28.1425 120.014 28.8254 119.601 29.6363L116.5 28.3417Z"
+            fill="#1E1E21" />
+          <path
+            d="M116.5 28.3417L119.601 29.6363C119.345 30.12 119.131 30.6466 118.961 31.2156C118.477 32.7236 118.235 34.4165 118.235 36.2944V50.6344H108.618V19.0807H116.386L116.5 28.3417Z"
+            fill="#1E1E21" />
+          <path
+            d="M86.6812 27.6873C86.1264 28.2136 85.657 28.868 85.2586 29.6505L82.3422 28.3417C82.769 26.4354 83.4946 24.6144 84.5331 23.0495C85.5716 21.4846 86.9231 20.1758 88.616 19.2796C92.329 17.0887 97.1375 18.5967 98.4463 19.3223C99.7978 19.9909 100.922 21.0294 101.789 22.4236C102.714 23.7751 103.383 25.4964 103.824 27.5592C104.265 29.5936 104.478 31.9694 104.478 34.6723V50.6341H94.8044V35.8673C94.8044 33.7619 94.6195 32.012 94.2638 30.6179C93.9508 29.2237 93.4245 28.1852 92.7131 27.5023C91.9876 26.791 91.0771 26.4354 89.9675 26.4354C88.6871 26.4354 87.5917 26.8479 86.6812 27.6873Z"
+            fill="#1E1E21" />
+          <path
+            d="M61.6409 28.3418C61.9112 27.2037 62.7648 24.6714 64.5431 22.4379C66.3214 20.2044 69.0243 18.2412 72.9935 18.2412C74.8286 18.2412 76.3366 18.6395 77.5316 19.4362C81.6999 21.7266 82.0982 26.1509 82.3401 28.3418L85.2564 29.6506C85.0288 30.12 84.8154 30.6464 84.6447 31.2155C84.161 32.6808 83.9192 34.3594 83.9192 36.2231V50.6342H74.4872V36.0524C74.4872 33.8615 74.288 32.069 73.8897 30.6749C73.5341 29.2807 72.965 28.228 72.211 27.5024C71.4997 26.7911 70.575 26.4355 69.4654 26.4355C68.185 26.4355 67.118 26.848 66.236 27.6874C65.6954 28.2137 65.2259 28.8681 64.8276 29.6506L61.6409 28.3418Z"
+            fill="#1E1E21" />
+          <path
+            d="M61.6422 28.3422L64.8289 29.651C64.5871 30.1204 64.3879 30.6468 64.203 31.2159C63.7762 32.6812 63.5486 34.3598 63.5486 36.2235V50.6346H53.9316V19.0809H61.5142L61.6422 28.3422Z"
+            fill="#1E1E21" />
+          <path d="M153.871 19.0376H144.24V50.5914H153.871V19.0376Z" fill="#1E1E21" />
+          <path
+            d="M149.046 14.6717C151.561 14.6717 153.599 12.6335 153.599 10.1193C153.599 7.60507 151.561 5.56689 149.046 5.56689C146.532 5.56689 144.494 7.60507 144.494 10.1193C144.494 12.6335 146.532 14.6717 149.046 14.6717Z"
+            fill="#1E1E21" />
+        </svg>
+      </div>
+    </div>
+    <section class="intro main-pad-x pad-top-header flx-row">
+      <div class="project-intro flx-col">
+        <!-- <h6 class="sml-txt">(1/3)</h6> -->
+        <p class="animatable">
+          A cutting-edge digital platform designed to revolutionize the way
+          people interact with technology.
+        </p>
+        <div class="flx-row project-intro--title animatable">
+          <h1>Baisim</h1>
+          <h3 class="Xl-thin">/24</h3>
         </div>
       </div>
-      <section class="intro main-pad-x flx-row">
-        <div class="project-intro flx-col">
-          <!-- <h6 class="sml-txt">(1/3)</h6> -->
-          <p class="animatable">
-            A cutting-edge digital platform designed to revolutionize the way
-            people interact with technology.
-          </p>
-          <div class="flx-row project-intro--title animatable">
-            <h1>Baisim</h1>
-            <h3 class="Xl-thin">/24</h3>
-          </div>
+    </section>
+    <section data-color="baisim" class="parallax mockup main-pad-x">
+      <div class="video-container">
+        <video autoplay loop class="vid" playsinline muted preload="auto">
+          <source src="assets/vid/baisim-frontPage.mov" type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+    <section class="project-type xl-padding flx-col">
+      <p class="p-big animatable">
+        Designed by artists in San Diego, built by craftsmen in Hermosillo,
+        Mexico, and dedicated to equipping people with the tools to do their
+        best work.
+      </p>
+      <p class="p-regular animatable">
+        This project was a collaboration with Cape Town Design
+        Agency MakeReign who designed the website. Being an animation studio,
+        Okalpha had some very clear ideas for how the website should feel and
+        what sort.
+      </p>
+      <div class="project-info flx-col">
+        <div class="flx-row width-100 row-space-btw">
+          <h5 class="label animatable">(client)</h5>
+          <h5 class="p-regular animatable">Kevin Levon</h5>
         </div>
-      </section>
-      <section data-color="baisim" class="parallax mockup main-pad-x">
-        <div class="video-container">
-          <video autoplay loop class="vid" playsinline muted preload="auto">
-            <source src="assets/vid/baisim-frontPage.mov" type="video/webm" />
+        <div class="line animatable"></div>
+        <div class="flx-row width-100 row-space-btw">
+          <h5 class="label animatable">(year)</h5>
+          <h5 class="p-regular animatable">2024</h5>
+        </div>
+        <div class="line animatable"></div>
+        <div class="flx-row width-100 row-space-btw">
+          <h5 class="label animatable">(Rule)</h5>
+          <h5 class="p-regular animatable">Design + Development</h5>
+        </div>
+        <div class="line animatable"></div>
+        <div class="flx-row width-100 row-space-btw">
+          <h5 class="label animatable">(view site)</h5>
+          <h5 class="p-regular animatable">
+            <a class="hoverable site" href="baisim.pro">baisim.pro</a>
+          </h5>
+        </div>
+        <div class="line animatable"></div>
+      </div>
+    </section>
+    <div class="main-pad-x flx-col">
+      <div class="mockup-snippet baisim-color main-pad-x flx-col">
+        <img class="snippet-img" src="assets/img/projects/baisim/img-1.png" alt="" />
+        <img class="snippet-img" src="assets/img/projects/baisim/img-2.png" alt="" />
+        <img class="snippet-img" src="assets/img/projects/baisim/img-3.png" alt="" />
+      </div>
+      <div class="main-pad-y flx-col">
+        <div class="mockup-snippet baisim-color main-pad-y main-pad-x flx-col">
+          <video autoplay loop class="" playsinline muted preload="auto">
+            <source src="assets/vid/baisim-menu.mov" type="video/webm" />
             Your browser does not support the video tag.
           </video>
         </div>
-      </section>
-      <section class="project-type xl-padding flx-col">
-        <p class="p-big animatable">
-          Designed by artists in San Diego, built by craftsmen in Hermosillo,
-          Mexico, and dedicated to equipping people with the tools to do their
-          best work.
-        </p>
-        <p class="p-regular animatable">
-          This project was a collaboration with Cape Town Design
-          Agency MakeReign who designed the website. Being an animation studio,
-          Okalpha had some very clear ideas for how the website should feel and
-          what sort.
-        </p>
-        <div class="project-info flx-col">
-          <div class="flx-row width-100 row-space-btw">
-            <h5 class="label animatable">(client)</h5>
-            <h5 class="p-regular animatable">Kevin Levon</h5>
-          </div>
-          <div class="line animatable"></div>
-          <div class="flx-row width-100 row-space-btw">
-            <h5 class="label animatable">(year)</h5>
-            <h5 class="p-regular animatable">2024</h5>
-          </div>
-          <div class="line animatable"></div>
-          <div class="flx-row width-100 row-space-btw">
-            <h5 class="label animatable">(Rule)</h5>
-            <h5 class="p-regular animatable">Design + Development</h5>
-          </div>
-          <div class="line animatable"></div>
-          <div class="flx-row width-100 row-space-btw">
-            <h5 class="label animatable">(view site)</h5>
-            <h5 class="p-regular animatable">
-              <a class="hoverable site" href="baisim.pro">baisim.pro</a>
-            </h5>
-          </div>
-          <div class="line animatable"></div>
-        </div>
-      </section>
-      <div class="main-pad-x flx-col">
-        <div class="mockup-snippet baisim-color main-pad-x flx-col">
-          <img
-            class="snippet-img"
-            src="assets/img/projects/baisim/img-1.png"
-            alt=""
-          />
-          <img
-            class="snippet-img"
-            src="assets/img/projects/baisim/img-2.png"
-            alt=""
-          />
-          <img
-            class="snippet-img"
-            src="assets/img/projects/baisim/img-3.png"
-            alt=""
-          />
-        </div>
-        <div class="main-pad-y flx-col">
-          <div
-            class="mockup-snippet baisim-color main-pad-y main-pad-x flx-col"
-          >
-            <video autoplay loop class="" playsinline muted preload="auto">
-              <source src="assets/vid/baisim-menu.mov" type="video/webm" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-        <div class="credit main-pad-x">
-          <h3 class="Xl-thin animatable">/Credit</h3>
-          <div class="line animatable"></div>
-          <div class="flx-row width-100 row-space-btw">
-            <h5 class="label animatable">(Content)</h5>
-            <h5 class="p-regular animatable">Kevin Levon</h5>
-          </div>
+      </div>
+      <div class="credit main-pad-x">
+        <h3 class="Xl-thin animatable">/Credit</h3>
+        <div class="line animatable"></div>
+        <div class="flx-row width-100 row-space-btw">
+          <h5 class="label animatable">(Content)</h5>
+          <h5 class="p-regular animatable">Kevin Levon</h5>
         </div>
       </div>
-      <div class="main-pad-x hight-100 flx-col next-pro-wrap">
-        <div class="flx-row next-pro">
-          <h1 class="XL-h animatable">
-            Other<br /><span class="animatable">projects</span>
-          </h1>
-          <h3 class="Xl-thin animatable">(2/3)</h3>
-        </div>
-      </div>
-      <section class="panel tiny-apt">
-        <div class="main-pad-x main-pad-y flx-col">
-          <div class="flx-col project-title">
-            <a class="hoverable" href="tiny-apt.html"
-              ><svg
-                class="animatable"
-                viewBox="0 0 3171 524"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M289.275 0.97168L431.206 523.774H316.076L287.112 407.915H137.948L108.257 523.774H0.359375L145.181 0.97168H289.275ZM158.936 328.997H264.654L210.342 101.622L158.92 328.98L158.936 328.997ZM841.759 0.97168V85.6862H720.105V523.774H609.318V85.6862H489.118V0.97168H841.759ZM980.288 523.774V0.97168H870.954V523.774H980.288ZM1191 0.97168L1330.75 363.031V0.97168H1432.12V523.774H1288.76L1145.39 141.452V523.774H1044.01V0.97168H1191ZM1663.61 221.824L1585.4 0.97168H1465.93L1602.06 331.887V523.774H1712.85V331.887L1858.4 0.97168H1746.88L1663.61 221.824ZM2202.42 0.97168L2344.35 523.774H2229.22L2200.25 407.915H2051.09L2021.4 523.774H1913.52L2058.34 0.97168H2202.42ZM2072.08 328.997H2177.8L2123.48 101.638L2072.06 328.997H2072.08ZM2673.31 38.6226C2649.41 13.5385 2610.67 0.97168 2557.09 0.97168H2373.18V523.774H2483.24V310.881H2557.81C2607.54 310.881 2645.19 299.058 2670.78 275.41C2696.36 251.763 2709.16 212.642 2709.16 158.098C2709.16 103.554 2697.2 63.7231 2673.31 38.6226ZM2580.26 212.774C2568.19 224.598 2550.57 230.51 2527.4 230.51H2527.38H2483.21V81.3431H2518.7C2550.07 81.3431 2571.19 87.3871 2582.06 99.4419C2592.92 111.53 2598.35 129.876 2598.35 155.935C2598.35 181.993 2592.31 200.951 2580.26 212.774ZM3079.67 0.97168V85.6862H2958.01V523.774H2847.23V85.6862H2727.03V0.97168H3079.67ZM3060.11 412.984H3170.9V523.774H3060.11V412.984Z"
-                  fill="#BFFF09"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </section>
     </div>
-    <div class="footer main-pad-x flx-col color-baisim">
-      <div class="sliding-txt">
-        <div class="text-container">
-          <h1 class="off-screen-txt lft-scrl">
-            let's - let's - let's - let's - let's - let's - let's - let's -
-            let's - let's - let's - let's - let's - let's - let's - let's -
-            let's - let's - let's - let's - let's - let's - let's - let's -
-            let's - let's - let's - let's - let's - let's - let's - let's -
-            let's - let's -
-          </h1>
-        </div>
-        <div class="text-container">
-          <h1 class="off-screen-txt right-scrl">
-            create + discuss + Talk + create + discuss + Talk + create + discuss
-            + Talk + create + discuss + Talk + create + discuss + Talk + create
-            + discuss + Talk + create + discuss + Talk + create + discuss + Talk
-            + create + discuss + Talk + create + discuss + Talk + Brainstorm +
-            create + discuss + Talk + create + discuss + Talk +
-          </h1>
+    <div class="main-pad-x hight-100 flx-col next-pro-wrap">
+      <div class="flx-row next-pro">
+        <h1 class="XL-h animatable">
+          Other<br /><span class="animatable">projects</span>
+        </h1>
+        <h3 class="Xl-thin animatable">(2/3)</h3>
+      </div>
+    </div>
+    <section class="panel tiny-apt">
+      <div class="main-pad-x main-pad-y flx-col">
+        <div class="flx-col project-title">
+          <a class="hoverable" href="tiny-apt.html"><svg class="animatable" viewBox="0 0 3171 524" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M289.275 0.97168L431.206 523.774H316.076L287.112 407.915H137.948L108.257 523.774H0.359375L145.181 0.97168H289.275ZM158.936 328.997H264.654L210.342 101.622L158.92 328.98L158.936 328.997ZM841.759 0.97168V85.6862H720.105V523.774H609.318V85.6862H489.118V0.97168H841.759ZM980.288 523.774V0.97168H870.954V523.774H980.288ZM1191 0.97168L1330.75 363.031V0.97168H1432.12V523.774H1288.76L1145.39 141.452V523.774H1044.01V0.97168H1191ZM1663.61 221.824L1585.4 0.97168H1465.93L1602.06 331.887V523.774H1712.85V331.887L1858.4 0.97168H1746.88L1663.61 221.824ZM2202.42 0.97168L2344.35 523.774H2229.22L2200.25 407.915H2051.09L2021.4 523.774H1913.52L2058.34 0.97168H2202.42ZM2072.08 328.997H2177.8L2123.48 101.638L2072.06 328.997H2072.08ZM2673.31 38.6226C2649.41 13.5385 2610.67 0.97168 2557.09 0.97168H2373.18V523.774H2483.24V310.881H2557.81C2607.54 310.881 2645.19 299.058 2670.78 275.41C2696.36 251.763 2709.16 212.642 2709.16 158.098C2709.16 103.554 2697.2 63.7231 2673.31 38.6226ZM2580.26 212.774C2568.19 224.598 2550.57 230.51 2527.4 230.51H2527.38H2483.21V81.3431H2518.7C2550.07 81.3431 2571.19 87.3871 2582.06 99.4419C2592.92 111.53 2598.35 129.876 2598.35 155.935C2598.35 181.993 2592.31 200.951 2580.26 212.774ZM3079.67 0.97168V85.6862H2958.01V523.774H2847.23V85.6862H2727.03V0.97168H3079.67ZM3060.11 412.984H3170.9V523.774H3060.11V412.984Z"
+                fill="#BFFF09" />
+            </svg>
+          </a>
         </div>
       </div>
-      <div class="footer-links flx-row">
-        <div class="flx-col">
-          <svg
-            class="footer-logo animatable"
-            viewBox="0 0 188 53"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M34.0473 0.406862C34.0473 0.406862 29.841 1.21946 26.9989 3.41602C22.6932 6.74261 12.9022 16.4557 11.6943 37.4691C11.538 40.237 11.3674 42.9922 12.0922 45.7094C12.2911 46.4204 12.5469 47.1314 12.888 47.7916C14.6358 51.2071 18.7569 51.8039 21.4853 49.0613C23.1053 47.4361 23.9437 45.4046 24.4979 43.2589C25.3932 39.818 25.5353 36.301 25.2226 32.7966C24.8958 29.0383 24.299 25.3055 23.9011 21.5599C23.5032 17.6873 23.6311 13.8402 24.7821 10.0819C25.4642 7.85994 26.53 5.85383 28.221 4.19053C31.9584 0.508437 37.5289 0.203712 41.9484 3.42872C45.4015 5.94271 47.5046 9.38356 48.5562 13.345C51.4694 24.4167 48.9399 34.2568 41.0247 42.6875C36.9178 47.0552 31.9016 50.0898 25.9474 51.4864C15.8722 53.8608 6.49325 48.6169 2.47169 40.3005C-0.526722 34.0917 -0.697248 27.6798 1.42011 21.2552C3.46642 15.0464 6.8343 10.958 8.35482 9.32008C9.9606 7.606 13.2858 4.12705 18.9274 1.91779C25.4216 -0.634283 31.2621 -0.0629227 34.0473 0.406862ZM21.8974 49.9374C21.8974 49.9374 21.9684 50.039 21.9969 50.0898C22.679 49.5692 23.4037 49.0867 24.0432 48.5281C25.9474 46.8394 27.3826 44.7825 28.5763 42.5859C32.6831 35.0694 35.6815 27.1465 37.4721 18.8047C38.1826 15.5035 38.6089 12.1769 38.2821 8.79951C38.1257 7.21239 37.8131 5.66337 36.861 4.3175C35.8379 2.85736 34.2463 2.2733 32.4842 2.73039C31.93 2.88276 31.3616 3.08591 30.85 3.35254C28.4768 4.62223 27.0416 6.66643 26.0895 9.05344C24.6258 12.7101 24.3842 16.5319 24.7111 20.3918C24.9668 23.312 25.4358 26.2196 25.7626 29.1526C26.2174 33.3299 26.3879 37.5199 25.6916 41.6844C25.18 44.7571 24.2279 47.6647 21.869 49.9374H21.8974Z"
-              fill="#1E1E21"
-            />
-            <path
-              d="M177.587 35.4976C178.014 35.3127 178.412 35.0993 178.797 34.8574L177.474 34.5587C177.474 34.5587 177.545 34.9143 177.587 35.4976ZM177.587 35.5118C177.175 35.6968 176.734 35.8533 176.279 35.9955C175.368 36.2658 174.429 36.4934 173.476 36.6499C172.566 36.8064 171.641 36.9914 170.73 37.1905C169.848 37.347 169.052 37.5604 168.34 37.8449C167.657 38.1152 167.117 38.4993 166.719 38.983C166.32 39.4525 166.078 40.1211 166.121 40.9462C166.32 43.9195 168.995 44.6024 170.19 44.6593C174.23 44.8442 176.108 42.2835 176.563 41.5295C177.73 39.5663 177.701 36.9202 177.587 35.5118ZM168.539 50.9188C167.871 50.9615 161.099 51.2033 158.738 46.338C157.201 43.1371 158.225 39.3956 159.022 38.0868C159.349 37.532 159.762 37.0625 159.762 37.0625C160.388 36.3369 161.156 35.7395 162.067 35.27C163.418 34.5587 165.04 33.9754 166.903 33.5344C167.231 33.449 167.558 33.3779 167.914 33.2925C169.535 32.9227 171.328 32.5812 173.305 32.2825C174.458 32.0833 175.411 31.9126 176.165 31.7419C176.961 31.5427 177.559 31.244 177.957 30.8456C178.356 30.4473 178.555 29.8782 178.555 29.1243C178.555 28.1284 178.199 27.2606 177.488 26.5493C176.762 25.838 175.61 25.4681 174.017 25.4681C172.907 25.4681 171.883 25.6673 170.972 26.0656C170.09 26.464 169.336 27.0472 168.696 27.8012C168.07 28.5552 167.586 29.4799 167.273 30.5469L158.78 28.0431C159.307 26.3644 160.018 24.9133 160.928 23.6756C161.896 22.4522 163.02 21.4279 164.343 20.6312C165.652 19.7919 167.145 19.1944 168.824 18.8387C170.531 18.4404 172.352 18.2412 174.258 18.2412C177.445 18.2412 180.034 18.7676 182.026 19.7919C184.06 20.7877 185.554 22.3668 186.507 24.515C187.503 26.6347 188.001 29.3519 188.001 32.7093L187.944 50.6343H180.817V43.3362C180.674 43.8199 179.92 50.4351 168.539 50.9188Z"
-              fill="#1E1E21"
-            />
-            <path
-              d="M177.472 34.5586L178.795 34.8574C178.411 35.0992 178.012 35.3126 177.586 35.4976C177.543 34.9143 177.472 34.5586 177.472 34.5586Z"
-              fill="#1E1E21"
-            />
-            <path
-              d="M116.5 28.3417C116.557 27.7442 117.169 22.196 122.062 19.2654C126.487 16.6051 131.807 17.672 134.994 19.9909C135.222 20.1616 136.203 20.8303 137.185 22.1248C139.134 24.714 140.101 28.8396 140.101 34.5016V50.6342H130.427V35.5686C130.427 32.3108 129.944 29.935 128.99 28.4555C128.08 26.9475 126.7 26.1935 124.865 26.1935C123.357 26.1935 122.105 26.6488 121.109 27.5593C120.512 28.1425 120.014 28.8254 119.601 29.6363L116.5 28.3417Z"
-              fill="#1E1E21"
-            />
-            <path
-              d="M116.5 28.3417L119.601 29.6363C119.345 30.12 119.131 30.6466 118.961 31.2156C118.477 32.7236 118.235 34.4165 118.235 36.2944V50.6344H108.618V19.0807H116.386L116.5 28.3417Z"
-              fill="#1E1E21"
-            />
-            <path
-              d="M86.6812 27.6873C86.1264 28.2136 85.657 28.868 85.2586 29.6505L82.3422 28.3417C82.769 26.4354 83.4946 24.6144 84.5331 23.0495C85.5716 21.4846 86.9231 20.1758 88.616 19.2796C92.329 17.0887 97.1375 18.5967 98.4463 19.3223C99.7978 19.9909 100.922 21.0294 101.789 22.4236C102.714 23.7751 103.383 25.4964 103.824 27.5592C104.265 29.5936 104.478 31.9694 104.478 34.6723V50.6341H94.8044V35.8673C94.8044 33.7619 94.6195 32.012 94.2638 30.6179C93.9508 29.2237 93.4245 28.1852 92.7131 27.5023C91.9876 26.791 91.0771 26.4354 89.9675 26.4354C88.6871 26.4354 87.5917 26.8479 86.6812 27.6873Z"
-              fill="#1E1E21"
-            />
-            <path
-              d="M61.6409 28.3418C61.9112 27.2037 62.7648 24.6714 64.5431 22.4379C66.3214 20.2044 69.0243 18.2412 72.9935 18.2412C74.8286 18.2412 76.3366 18.6395 77.5316 19.4362C81.6999 21.7266 82.0982 26.1509 82.3401 28.3418L85.2564 29.6506C85.0288 30.12 84.8154 30.6464 84.6447 31.2155C84.161 32.6808 83.9192 34.3594 83.9192 36.2231V50.6342H74.4872V36.0524C74.4872 33.8615 74.288 32.069 73.8897 30.6749C73.5341 29.2807 72.965 28.228 72.211 27.5024C71.4997 26.7911 70.575 26.4355 69.4654 26.4355C68.185 26.4355 67.118 26.848 66.236 27.6874C65.6954 28.2137 65.2259 28.8681 64.8276 29.6506L61.6409 28.3418Z"
-              fill="#1E1E21"
-            />
-            <path
-              d="M61.6422 28.3422L64.8289 29.651C64.5871 30.1204 64.3879 30.6468 64.203 31.2159C63.7762 32.6812 63.5486 34.3598 63.5486 36.2235V50.6346H53.9316V19.0809H61.5142L61.6422 28.3422Z"
-              fill="#1E1E21"
-            />
-            <path
-              d="M153.871 19.0376H144.24V50.5914H153.871V19.0376Z"
-              fill="#1E1E21"
-            />
-            <path
-              d="M149.046 14.6717C151.561 14.6717 153.599 12.6335 153.599 10.1193C153.599 7.60507 151.561 5.56689 149.046 5.56689C146.532 5.56689 144.494 7.60507 144.494 10.1193C144.494 12.6335 146.532 14.6717 149.046 14.6717Z"
-              fill="#1E1E21"
-            />
-          </svg>
+    </section>
+  </div>
+  <div class="footer main-pad-x flx-col color-baisim">
+    <div class="sliding-txt">
+      <div class="text-container">
+        <h1 class="off-screen-txt lft-scrl">
+          let's - let's - let's - let's - let's - let's - let's - let's -
+          let's - let's - let's - let's - let's - let's - let's - let's -
+          let's - let's - let's - let's - let's - let's - let's - let's -
+          let's - let's - let's - let's - let's - let's - let's - let's -
+          let's - let's -
+        </h1>
+      </div>
+      <div class="text-container">
+        <h1 class="off-screen-txt right-scrl">
+          create + discuss + Talk + create + discuss + Talk + create + discuss
+          + Talk + create + discuss + Talk + create + discuss + Talk + create
+          + discuss + Talk + create + discuss + Talk + create + discuss + Talk
+          + create + discuss + Talk + create + discuss + Talk + Brainstorm +
+          create + discuss + Talk + create + discuss + Talk +
+        </h1>
+      </div>
+    </div>
+    <div class="footer-links flx-row">
+      <div class="flx-col">
+        <svg class="footer-logo animatable" viewBox="0 0 188 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M34.0473 0.406862C34.0473 0.406862 29.841 1.21946 26.9989 3.41602C22.6932 6.74261 12.9022 16.4557 11.6943 37.4691C11.538 40.237 11.3674 42.9922 12.0922 45.7094C12.2911 46.4204 12.5469 47.1314 12.888 47.7916C14.6358 51.2071 18.7569 51.8039 21.4853 49.0613C23.1053 47.4361 23.9437 45.4046 24.4979 43.2589C25.3932 39.818 25.5353 36.301 25.2226 32.7966C24.8958 29.0383 24.299 25.3055 23.9011 21.5599C23.5032 17.6873 23.6311 13.8402 24.7821 10.0819C25.4642 7.85994 26.53 5.85383 28.221 4.19053C31.9584 0.508437 37.5289 0.203712 41.9484 3.42872C45.4015 5.94271 47.5046 9.38356 48.5562 13.345C51.4694 24.4167 48.9399 34.2568 41.0247 42.6875C36.9178 47.0552 31.9016 50.0898 25.9474 51.4864C15.8722 53.8608 6.49325 48.6169 2.47169 40.3005C-0.526722 34.0917 -0.697248 27.6798 1.42011 21.2552C3.46642 15.0464 6.8343 10.958 8.35482 9.32008C9.9606 7.606 13.2858 4.12705 18.9274 1.91779C25.4216 -0.634283 31.2621 -0.0629227 34.0473 0.406862ZM21.8974 49.9374C21.8974 49.9374 21.9684 50.039 21.9969 50.0898C22.679 49.5692 23.4037 49.0867 24.0432 48.5281C25.9474 46.8394 27.3826 44.7825 28.5763 42.5859C32.6831 35.0694 35.6815 27.1465 37.4721 18.8047C38.1826 15.5035 38.6089 12.1769 38.2821 8.79951C38.1257 7.21239 37.8131 5.66337 36.861 4.3175C35.8379 2.85736 34.2463 2.2733 32.4842 2.73039C31.93 2.88276 31.3616 3.08591 30.85 3.35254C28.4768 4.62223 27.0416 6.66643 26.0895 9.05344C24.6258 12.7101 24.3842 16.5319 24.7111 20.3918C24.9668 23.312 25.4358 26.2196 25.7626 29.1526C26.2174 33.3299 26.3879 37.5199 25.6916 41.6844C25.18 44.7571 24.2279 47.6647 21.869 49.9374H21.8974Z"
+            fill="#1E1E21" />
+          <path
+            d="M177.587 35.4976C178.014 35.3127 178.412 35.0993 178.797 34.8574L177.474 34.5587C177.474 34.5587 177.545 34.9143 177.587 35.4976ZM177.587 35.5118C177.175 35.6968 176.734 35.8533 176.279 35.9955C175.368 36.2658 174.429 36.4934 173.476 36.6499C172.566 36.8064 171.641 36.9914 170.73 37.1905C169.848 37.347 169.052 37.5604 168.34 37.8449C167.657 38.1152 167.117 38.4993 166.719 38.983C166.32 39.4525 166.078 40.1211 166.121 40.9462C166.32 43.9195 168.995 44.6024 170.19 44.6593C174.23 44.8442 176.108 42.2835 176.563 41.5295C177.73 39.5663 177.701 36.9202 177.587 35.5118ZM168.539 50.9188C167.871 50.9615 161.099 51.2033 158.738 46.338C157.201 43.1371 158.225 39.3956 159.022 38.0868C159.349 37.532 159.762 37.0625 159.762 37.0625C160.388 36.3369 161.156 35.7395 162.067 35.27C163.418 34.5587 165.04 33.9754 166.903 33.5344C167.231 33.449 167.558 33.3779 167.914 33.2925C169.535 32.9227 171.328 32.5812 173.305 32.2825C174.458 32.0833 175.411 31.9126 176.165 31.7419C176.961 31.5427 177.559 31.244 177.957 30.8456C178.356 30.4473 178.555 29.8782 178.555 29.1243C178.555 28.1284 178.199 27.2606 177.488 26.5493C176.762 25.838 175.61 25.4681 174.017 25.4681C172.907 25.4681 171.883 25.6673 170.972 26.0656C170.09 26.464 169.336 27.0472 168.696 27.8012C168.07 28.5552 167.586 29.4799 167.273 30.5469L158.78 28.0431C159.307 26.3644 160.018 24.9133 160.928 23.6756C161.896 22.4522 163.02 21.4279 164.343 20.6312C165.652 19.7919 167.145 19.1944 168.824 18.8387C170.531 18.4404 172.352 18.2412 174.258 18.2412C177.445 18.2412 180.034 18.7676 182.026 19.7919C184.06 20.7877 185.554 22.3668 186.507 24.515C187.503 26.6347 188.001 29.3519 188.001 32.7093L187.944 50.6343H180.817V43.3362C180.674 43.8199 179.92 50.4351 168.539 50.9188Z"
+            fill="#1E1E21" />
+          <path
+            d="M177.472 34.5586L178.795 34.8574C178.411 35.0992 178.012 35.3126 177.586 35.4976C177.543 34.9143 177.472 34.5586 177.472 34.5586Z"
+            fill="#1E1E21" />
+          <path
+            d="M116.5 28.3417C116.557 27.7442 117.169 22.196 122.062 19.2654C126.487 16.6051 131.807 17.672 134.994 19.9909C135.222 20.1616 136.203 20.8303 137.185 22.1248C139.134 24.714 140.101 28.8396 140.101 34.5016V50.6342H130.427V35.5686C130.427 32.3108 129.944 29.935 128.99 28.4555C128.08 26.9475 126.7 26.1935 124.865 26.1935C123.357 26.1935 122.105 26.6488 121.109 27.5593C120.512 28.1425 120.014 28.8254 119.601 29.6363L116.5 28.3417Z"
+            fill="#1E1E21" />
+          <path
+            d="M116.5 28.3417L119.601 29.6363C119.345 30.12 119.131 30.6466 118.961 31.2156C118.477 32.7236 118.235 34.4165 118.235 36.2944V50.6344H108.618V19.0807H116.386L116.5 28.3417Z"
+            fill="#1E1E21" />
+          <path
+            d="M86.6812 27.6873C86.1264 28.2136 85.657 28.868 85.2586 29.6505L82.3422 28.3417C82.769 26.4354 83.4946 24.6144 84.5331 23.0495C85.5716 21.4846 86.9231 20.1758 88.616 19.2796C92.329 17.0887 97.1375 18.5967 98.4463 19.3223C99.7978 19.9909 100.922 21.0294 101.789 22.4236C102.714 23.7751 103.383 25.4964 103.824 27.5592C104.265 29.5936 104.478 31.9694 104.478 34.6723V50.6341H94.8044V35.8673C94.8044 33.7619 94.6195 32.012 94.2638 30.6179C93.9508 29.2237 93.4245 28.1852 92.7131 27.5023C91.9876 26.791 91.0771 26.4354 89.9675 26.4354C88.6871 26.4354 87.5917 26.8479 86.6812 27.6873Z"
+            fill="#1E1E21" />
+          <path
+            d="M61.6409 28.3418C61.9112 27.2037 62.7648 24.6714 64.5431 22.4379C66.3214 20.2044 69.0243 18.2412 72.9935 18.2412C74.8286 18.2412 76.3366 18.6395 77.5316 19.4362C81.6999 21.7266 82.0982 26.1509 82.3401 28.3418L85.2564 29.6506C85.0288 30.12 84.8154 30.6464 84.6447 31.2155C84.161 32.6808 83.9192 34.3594 83.9192 36.2231V50.6342H74.4872V36.0524C74.4872 33.8615 74.288 32.069 73.8897 30.6749C73.5341 29.2807 72.965 28.228 72.211 27.5024C71.4997 26.7911 70.575 26.4355 69.4654 26.4355C68.185 26.4355 67.118 26.848 66.236 27.6874C65.6954 28.2137 65.2259 28.8681 64.8276 29.6506L61.6409 28.3418Z"
+            fill="#1E1E21" />
+          <path
+            d="M61.6422 28.3422L64.8289 29.651C64.5871 30.1204 64.3879 30.6468 64.203 31.2159C63.7762 32.6812 63.5486 34.3598 63.5486 36.2235V50.6346H53.9316V19.0809H61.5142L61.6422 28.3422Z"
+            fill="#1E1E21" />
+          <path d="M153.871 19.0376H144.24V50.5914H153.871V19.0376Z" fill="#1E1E21" />
+          <path
+            d="M149.046 14.6717C151.561 14.6717 153.599 12.6335 153.599 10.1193C153.599 7.60507 151.561 5.56689 149.046 5.56689C146.532 5.56689 144.494 7.60507 144.494 10.1193C144.494 12.6335 146.532 14.6717 149.046 14.6717Z"
+            fill="#1E1E21" />
+        </svg>
 
-          <h5 class="email animatable">sayhi@itsomnia.com</h5>
-        </div>
-        <div class="flx-row socials">
-          <a class="hoverable animatable" href="#">Behance</a>
-          <a class="hoverable animatable" href="#">Dribble</a>
-          <a class="hoverable animatable" href="#">Linkedin</a>
-        </div>
+        <h5 class="email animatable">sayhi@itsomnia.com</h5>
       </div>
-      <h6 class="copyright">
-        ©2021-2024 Omnia - All Rights Reserved
-        <a class="hoverable" href="#">Privacy Policy</a>
-      </h6>
+      <div class="flx-row socials">
+        <a class="hoverable animatable" href="#">Behance</a>
+        <a class="hoverable animatable" href="#">Dribble</a>
+        <a class="hoverable animatable" href="#">Linkedin</a>
+      </div>
     </div>
-  </body>
+    <h6 class="copyright">
+      ©2021-2024 Omnia - All Rights Reserved
+      <a class="hoverable" href="#">Privacy Policy</a>
+    </h6>
+  </div>
+</body>
+
 </html>
