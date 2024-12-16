@@ -41,11 +41,13 @@ jQuery(document).ready(($) => {
   });
 
   // the big scrolling text
+  var ritScroll = document.querySelector(".right-scrl");
+  // console.log(ritScroll);
   jQuery(document).on("scroll", function () {
     jQuery(".lft-scrl").css("left", Math.max(0 - 0.03 * window.scrollY) + "vw");
     jQuery(".right-scrl").css(
       "right",
-      Math.max(0 - 0.9 * (window.scrollY / 20)) + "vw"
+      Math.max(0 - 0.9 * (window.scrollY / 20)) - 50 + "vw"
     );
   });
 
@@ -180,4 +182,30 @@ jQuery(document).ready(($) => {
       .addTo(controller);
     n = n - 0.1;
   }
+
+  // the contact form
+
+  // the Subject button
+  var subject = document.querySelector("#dropdownMenuButton");
+  // console.log(subject.textContent);
+
+  var subjectOption = document.querySelectorAll(".dropdown-item");
+  subjectOption.forEach((option) =>
+    option.addEventListener("click", () => {
+      subject.textContent = option.textContent;
+      subject.value = subject.textContent;
+    })
+  );
+
+  var submitForm = document.querySelector("form");
+  console.log(submitForm);
+  submitForm.addEventListener("submit", async function handleOnSubmit(e) {
+    e.preventDefault();
+    var formData = {};
+    Array.from(e.currentTarget.elements).forEach((field) => {
+      if (!field.name) return;
+      formData[field.name] = field.value;
+    });
+    console.log(formData);
+  });
 });

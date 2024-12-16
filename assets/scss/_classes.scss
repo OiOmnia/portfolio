@@ -14,6 +14,9 @@
 .main-pad-y {
   padding-block: 7rem;
 }
+.main-pad-2rem {
+  padding-block: 1rem;
+}
 .xl-padding {
   padding: 5rem 20rem;
 }
@@ -75,16 +78,43 @@
 }
 .XL-h {
   font-size: var(--180px);
+  font-weight: 600;
   letter-spacing: 2px;
   margin: 0;
   text-transform: uppercase;
   line-height: 0.8;
+}
+.h3 {
+  font-size: var(--28px);
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+}
+.h6 {
+  font-size: var(--16px);
+  font-weight: 300;
+  text-transform: capitalize;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+.just-btw-end {
+  justify-content: space-between;
+  align-items: end;
 }
 .hight-100 {
   height: 100vh;
 }
 .width-100 {
   width: 100%;
+}
+.width-50 {
+  width: 50%;
+}
+.pad-block {
+  padding-block: 5vh;
+}
+.pad-top {
+  padding-top: 5vh;
 }
 .pad-t-0 {
   padding-top: 0;
@@ -94,6 +124,20 @@
 }
 .pad-lft-double {
   padding-left: 7rem;
+}
+.pad-rit-double {
+  padding-right: 7rem;
+}
+.pad-bottom-3 {
+  padding-bottom: 3rem;
+}
+.pad-bottom-10vh {
+  padding-bottom: 10vh;
+}
+.flx-bte-cent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .row-space-btw {
   justify-content: space-between;
@@ -116,17 +160,22 @@
   font-size: var(--20px);
   text-transform: capitalize;
   letter-spacing: 2px;
-  font-weight: 400;
-  margin-block: 20px;
+  font-weight: 300;
+  line-height: 1.5;
 }
 .p-regular {
   font-family: "Inter", sans-serif;
   font-size: var(--20px);
   line-height: 1.5;
   font-weight: 300;
-  margin-block: 20px;
+  margin-block: auto;
 }
 .site {
   color: var(--black);
   text-decoration: underline;
+}
+.grid-col-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5rem;
 }

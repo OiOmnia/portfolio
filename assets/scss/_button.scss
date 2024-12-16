@@ -1,0 +1,170 @@
+button {
+  border: none;
+  background-color: transparent;
+}
+
+.the-arrow {
+  width: 1px;
+  transition: all 0.2s;
+
+  &.-left {
+    position: absolute;
+    top: 40%;
+    left: 0;
+
+    > .shaft {
+      width: 0;
+      background-color: var(--black);
+
+      &:before,
+      &:after {
+        width: 0;
+        background-color: var(--black);
+      }
+
+      &:before {
+        transform: rotate(0);
+      }
+
+      &:after {
+        transform: rotate(0);
+      }
+    }
+  }
+
+  &.-right {
+    > .shaft {
+      width: 1px;
+      transition-delay: 0.2s;
+
+      &:before,
+      &:after {
+        width: 8px;
+        transition-delay: 0.3s;
+        transition: all 0.5s;
+      }
+
+      &:before {
+        transform: rotate(40deg);
+      }
+
+      &:after {
+        transform: rotate(-40deg);
+      }
+    }
+  }
+
+  > .shaft {
+    background-color: var(--black);
+    display: block;
+    height: 1px;
+    position: relative;
+    transition: all 0.2s;
+    transition-delay: 0;
+    will-change: transform;
+
+    &:before,
+    &:after {
+      background-color: var(--black);
+      content: "";
+      display: block;
+      height: 1px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transition: all 0.2s;
+      transition-delay: 0;
+    }
+
+    &:before {
+      transform-origin: top right;
+    }
+
+    &:after {
+      transform-origin: bottom right;
+    }
+  }
+}
+
+.animated-arrow {
+  display: inline-block;
+  color: var(--black);
+  font-size: 1.25em;
+  font-style: italic;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.5s;
+  border-bottom: 1px solid var(--black);
+  padding-bottom: 0.5rem;
+
+  &:hover {
+    color: var(--black);
+    border-bottom: none;
+
+    > .the-arrow.-left {
+      > .shaft {
+        width: 3rem;
+        transition-delay: 0.1s;
+        background-color: var(--black);
+
+        &:before,
+        &:after {
+          width: 8px;
+          transition-delay: 0.1s;
+          background-color: var(--black);
+        }
+
+        &:before {
+          transform: rotate(40deg);
+        }
+
+        &:after {
+          transform: rotate(-40deg);
+        }
+      }
+    }
+
+    > .main {
+      transform: translateX(1px + 16px);
+      transform: translateX(3rem + 1rem);
+
+      > .the-arrow.-right {
+        > .shaft {
+          width: 0;
+          transform: translateX(200%);
+          transition-delay: 0;
+
+          &:before,
+          &:after {
+            width: 0;
+            transition-delay: 0;
+            transition: all 0.1s;
+          }
+
+          &:before {
+            transform: rotate(0);
+          }
+
+          &:after {
+            transform: rotate(0);
+          }
+        }
+      }
+    }
+  }
+
+  > .main {
+    display: flex;
+    align-items: center;
+    transition: all 0.5s;
+
+    > .text {
+      margin: 0 16px 0 0;
+      line-height: 1;
+    }
+
+    > .the-arrow {
+      position: relative;
+    }
+  }
+}
