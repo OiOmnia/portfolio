@@ -6,6 +6,13 @@ jQuery(document).ready(($) => {
       link.classList.add("active");
     }
   });
+
+  // phone nav
+  $("#toggle").click(function () {
+    $(this).toggleClass("active");
+    $("#overlay").toggleClass("open");
+  });
+
   // cursor
   let mainCircle = document.createElement("div");
   mainCircle.classList.add("circle-main");
