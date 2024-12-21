@@ -41,7 +41,7 @@
 
 $button-height: 27px;
 $button-width: 35px;
-a {
+a.Xl-thin {
   display: inline-block;
   position: relative;
   color: var(--black);
@@ -70,7 +70,7 @@ a {
 .button_container {
   position: fixed;
   top: 3rem;
-  left: 1rem;
+  left: 0;
   height: $button-height;
   width: 50px;
   cursor: pointer;
@@ -171,14 +171,13 @@ a {
       position: relative;
       opacity: 0;
 
-      a {
+      a.Xl-thin {
         display: block;
         position: relative;
-        color: var(--white);
+        color: var(--white) !important;
         text-decoration: none;
         overflow: hidden;
         padding-bottom: 1rem;
-
         &:hover:after,
         &:focus:after,
         &:active:after {
