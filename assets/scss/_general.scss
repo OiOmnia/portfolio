@@ -10,6 +10,7 @@
   --blue: #99b7f5;
   --purble: #b8afda;
   --purble-light: #e5e6f8;
+  --grey-light: #f4f2f1;
   --baisim-color: #379777;
   --luupe-color: #0a5bfc;
   --cb-color: #fbdb06;
@@ -49,7 +50,7 @@
   background-color: #c9c444;
 }
 .light-purble {
-  background-color: var(--purble-light) !important;
+  background-color: var(--grey-light) !important;
 }
 .color-baisim {
   background-color: var(--baisim-color) !important;
@@ -68,7 +69,7 @@ html {
 }
 body {
   margin: 0;
-  background-color: var(--purble-light);
+  background-color: var(--grey-light);
   transition: background-color 0.7s ease;
   overflow-x: hidden;
 }
@@ -387,7 +388,7 @@ a:hover {
 // the footer
 .footer {
   position: relative;
-  background-color: var(--purble-light);
+  background-color: var(--grey-light);
   padding-top: 20rem;
   align-items: center;
   justify-content: space-between;
@@ -563,7 +564,7 @@ input:-internal-autofill-selected {
 .btn-secondary:not(:disabled):not(.disabled).active,
 .btn-secondary:not(:disabled):not(.disabled):active,
 .show > .btn-secondary.dropdown-toggle {
-  background-color: var(--purble-light);
+  background-color: var(--grey-light);
   border-color: transparent;
   border: 2px solid var(--black);
 }
@@ -584,7 +585,7 @@ input:-internal-autofill-selected {
   display: block;
   width: 100%;
   margin: 0px;
-  background-color: var(--purble-light);
+  background-color: var(--grey-light);
   border: 2px solid var(--black);
 }
 :focus-visible {

@@ -605,6 +605,7 @@ a.Xl-thin:hover:after, a.Xl-thin:focus:after, a.Xl-thin:active:after {
   --blue: #99b7f5;
   --purble: #b8afda;
   --purble-light: #e5e6f8;
+  --grey-light: #f4f2f1;
   --baisim-color: #379777;
   --luupe-color: #0a5bfc;
   --cb-color: #fbdb06;
@@ -645,7 +646,7 @@ a.Xl-thin:hover:after, a.Xl-thin:focus:after, a.Xl-thin:active:after {
 }
 
 .light-purble {
-  background-color: var(--purble-light) !important;
+  background-color: var(--grey-light) !important;
 }
 
 .color-baisim {
@@ -668,7 +669,7 @@ html {
 
 body {
   margin: 0;
-  background-color: var(--purble-light);
+  background-color: var(--grey-light);
   transition: background-color 0.7s ease;
   overflow-x: hidden;
 }
@@ -1022,7 +1023,7 @@ a:hover {
 
 .footer {
   position: relative;
-  background-color: var(--purble-light);
+  background-color: var(--grey-light);
   padding-top: 20rem;
   align-items: center;
   justify-content: space-between;
@@ -1209,7 +1210,7 @@ input:-internal-autofill-selected {
 .btn-secondary:not(:disabled):not(.disabled).active,
 .btn-secondary:not(:disabled):not(.disabled):active,
 .show > .btn-secondary.dropdown-toggle {
-  background-color: var(--purble-light);
+  background-color: var(--grey-light);
   border-color: transparent;
   border: 2px solid var(--black);
 }
@@ -1233,7 +1234,7 @@ input:-internal-autofill-selected {
   display: block;
   width: 100%;
   margin: 0px;
-  background-color: var(--purble-light);
+  background-color: var(--grey-light);
   border: 2px solid var(--black);
 }
 
@@ -1408,6 +1409,16 @@ input:-webkit-autofill:active {
   .p-regular {
     letter-spacing: 1px;
   }
+  .L-h1-bold {
+    font-weight: 400;
+  }
+  .L-h {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+  .Xl-thin {
+    font-weight: 400;
+  }
   .col-rvs {
     flex-direction: column-reverse;
   }
@@ -1425,10 +1436,6 @@ input:-webkit-autofill:active {
   }
   .intro__p-page-container {
     width: 100%;
-  }
-  .L-h {
-    font-size: 3rem;
-    font-weight: 400;
   }
   .services {
     padding-top: 5rem;
@@ -1487,6 +1494,33 @@ input:-webkit-autofill:active {
   }
   .next-pro-wrap {
     height: 50vh;
+  }
+  .txt-just {
+    text-align: justify;
+  }
+  .about-grid {
+    grid-template-rows: auto;
+  }
+  .about-img-type {
+    flex-direction: column-reverse;
+    padding-inline: initial;
+    padding-top: 5rem;
+  }
+  .about-type {
+    width: unset;
+    padding-top: 5rem;
+  }
+  .main-pad-x.pad-rit-double {
+    padding-inline: 1.5rem;
+  }
+  .flx-col.pad-rit-double {
+    padding-right: unset;
+  }
+  .grid-lft-pad {
+    display: block;
+  }
+  .pad-left-large {
+    grid-column: unset;
   }
 }
 @media (max-width: 480px) {

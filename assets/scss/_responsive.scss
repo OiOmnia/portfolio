@@ -126,6 +126,8 @@
   }
 }
 @media (max-width: 500px) {
+  // classes
+
   .main-pad-x {
     padding-inline: 1.5rem;
   }
@@ -144,13 +146,24 @@
   .p-regular {
     letter-spacing: 1px;
   }
-  // home page
+  .L-h1-bold {
+    font-weight: 400;
+  }
+  .L-h {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+  .Xl-thin {
+    font-weight: 400;
+  }
   .col-rvs {
     flex-direction: column-reverse;
   }
   .pad-top-header {
     padding-top: 18rem;
   }
+
+  // home page
   .intro__skills {
     width: 60%;
 
@@ -163,10 +176,6 @@
   }
   .intro__p-page-container {
     width: 100%;
-  }
-  .L-h {
-    font-size: 3rem;
-    font-weight: 400;
   }
   .services {
     padding-top: 5rem;
@@ -230,6 +239,36 @@
   }
   .next-pro-wrap {
     height: 50vh;
+  }
+
+  // about page
+  .txt-just {
+    text-align: justify;
+  }
+  .about-grid {
+    grid-template-rows: auto;
+  }
+  .about-img-type {
+    flex-direction: column-reverse;
+    padding-inline: initial;
+    padding-top: 5rem;
+  }
+  .about-type {
+    width: unset;
+    padding-top: 5rem;
+  }
+  .main-pad-x.pad-rit-double {
+    padding-inline: 1.5rem;
+  }
+  .flx-col.pad-rit-double {
+    padding-right: unset;
+  }
+
+  .grid-lft-pad {
+    display: block;
+  }
+  .pad-left-large {
+    grid-column: unset;
   }
 }
 @media (max-width: 480px) {
