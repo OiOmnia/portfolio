@@ -19,14 +19,14 @@
   --12px: 0.75rem;
   --14px: 0.875rem;
   --16px: 1rem;
-  --18px: clamp(0.8rem, 0.5vw + 1rem, 1.125rem);
+  --18px: clamp(0.8rem, 0.5vw + 0.6rem, 1.125rem);
   --20px: clamp(0.8rem, 1vw + 0.5rem, 1.25rem);
   --24px: clamp(0.5rem, 0.5vw + 1rem, 1.5rem);
   --26px: 1.625rem;
   --28px: clamp(0.5rem, 0.5vw + 1rem, 1.75rem);
   --30px: 1.875rem;
   --32px: 2rem;
-  --42px: clamp(0.7rem, 2vw + 1rem, 2.625rem);
+  --42px: clamp(0.7rem, 1vw + 1rem, 2.625rem);
   --60px: clamp(1.87rem, 2vw + 1rem, 3.75rem);
   --80px: clamp(1rem, 4vw + 1rem, 5rem);
   --110px: clamp(2.6rem, 8vw, 8rem);
@@ -34,7 +34,7 @@
   --140px: clamp(5rem, 4vw + 4rem, 8.75rem);
   --160px: 10rem;
   --180px: clamp(3rem, 10vw + 1rem, 11.25rem);
-  --200px: clamp(3rem, 10vw + 1rem, 12.5rem);
+  --200px: clamp(3rem, 12vw + 2rem, 12.5rem);
   --230px: 14.375rem;
   --250px: clamp(1.8rem, 14vw + 1rem, 15.625rem);
 }
@@ -126,7 +126,7 @@ a:hover {
 }
 // the intro section
 .intro {
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
   // height: 80vh;
   justify-content: end;
 }
@@ -197,20 +197,25 @@ a:hover {
 }
 
 .services {
-  height: 50vh;
+  height: 60vh;
   justify-content: space-between;
+  padding-top: 7rem;
 }
 .services__item {
   width: 30%;
   align-self: flex-start;
   height: 100%;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 .services__item-num {
   margin-top: 0;
+  font-weight: 100;
+  font-size: var(--60px);
+  padding-bottom: 2rem;
 }
 .services__item-title {
   margin-bottom: 0;
+  padding-block: 2rem;
 }
 .services__item-txt {
   font-size: var(--18px);
@@ -224,6 +229,7 @@ a:hover {
 .featured-line {
   justify-content: space-evenly;
   align-items: center;
+  padding-bottom: 1rem;
   // position: relative;
 }
 
@@ -330,7 +336,7 @@ a:hover {
   p {
     font-size: var(--24px);
     margin-left: 55%;
-    padding-block: 5rem;
+    padding-block: 7rem;
   }
 }
 .dot {
@@ -418,6 +424,9 @@ a:hover {
     padding-left: 5rem;
   }
 }
+.footer-links a:nth-child(1) {
+  padding-left: 0;
+}
 .socials {
   // width: 20vw;
   justify-content: space-between;
@@ -464,8 +473,9 @@ a:hover {
   justify-content: space-between;
 }
 .about-type {
-  width: 45%;
+  width: 75%;
   align-self: flex-end;
+  padding-right: 5rem;
 
   p {
     font-size: var(--18px);
@@ -476,9 +486,9 @@ a:hover {
 }
 .portrait-img-wrapper {
   display: inline-block;
-  width: 440px;
-  height: 540px;
-  margin-top: 1rem;
+  width: 100%;
+  height: 35rem;
+  // margin-top: 1rem;
   background-size: cover;
   background-position: center;
   background-image: url("../img/sample.png");

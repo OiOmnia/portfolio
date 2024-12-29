@@ -21,7 +21,7 @@
   padding: 5rem 20rem;
 }
 .pad-top-header {
-  padding-top: 18rem;
+  padding-top: 15rem;
 }
 .flx-col {
   display: flex;
@@ -78,8 +78,8 @@
   margin: 0;
 }
 .XL-h {
-  font-size: var(--180px);
-  font-weight: 600;
+  font-size: var(--200px);
+  font-weight: 100;
   letter-spacing: 2px;
   margin: 0;
   text-transform: uppercase;
@@ -167,6 +167,7 @@
   letter-spacing: 2px;
   font-weight: 300;
   line-height: 1.5;
+  margin: 0;
 }
 .p-regular {
   font-family: "Inter", sans-serif;

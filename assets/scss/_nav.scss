@@ -27,6 +27,9 @@
     }
   }
 }
+.nav-link:nth-child(1) {
+  padding-left: 0;
+}
 .logo {
   font-family: "Inter", sans-serif;
   color: var(--black);
