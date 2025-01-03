@@ -14,12 +14,12 @@ button {
 
     > .shaft {
       width: 0;
-      background-color: var(--black);
+      background-color: var(--main);
 
       &:before,
       &:after {
         width: 0;
-        background-color: var(--black);
+        background-color: var(--main);
       }
 
       &:before {
@@ -55,7 +55,7 @@ button {
   }
 
   > .shaft {
-    background-color: var(--black);
+    background-color: var(--main);
     display: block;
     height: 1px;
     position: relative;
@@ -65,7 +65,7 @@ button {
 
     &:before,
     &:after {
-      background-color: var(--black);
+      background-color: var(--main);
       content: "";
       display: block;
       height: 1px;
@@ -88,30 +88,30 @@ button {
 
 .animated-arrow {
   display: inline-block;
-  color: var(--black);
+  color: var(--main);
   font-size: 1.25em;
   font-style: italic;
   text-decoration: none;
   position: relative;
   transition: all 0.5s;
-  border-bottom: 1px solid var(--black);
+  border-bottom: 1px solid var(--main);
   padding-bottom: 0.5rem;
 
   &:hover {
-    color: var(--black);
+    color: var(--main);
     border-bottom: none;
 
     > .the-arrow.-left {
       > .shaft {
         width: 3rem;
         transition-delay: 0.1s;
-        background-color: var(--black);
+        background-color: var(--main);
 
         &:before,
         &:after {
           width: 8px;
           transition-delay: 0.1s;
-          background-color: var(--black);
+          background-color: var(--main);
         }
 
         &:before {

@@ -124,8 +124,8 @@ jQuery(document).ready(($) => {
       $body = $("body"),
       $section = $("section");
 
-    // Change 33% earlier than scroll position so colour is there when you arrive.
-    var scroll = $window.scrollTop() + $window.height() / 3;
+    // Change a bit earlier than scroll position so colour is there when you arrive.
+    var scroll = $window.scrollTop() + $window.height() / 1.5;
     $section.each(function () {
       var $this = $(this);
 

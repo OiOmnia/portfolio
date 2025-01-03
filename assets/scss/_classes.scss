@@ -36,7 +36,7 @@
 }
 .line {
   height: 1px;
-  background-color: var(--black);
+  background-color: var(--main);
   width: 100%;
 }
 .parallax {
@@ -177,7 +177,7 @@
   margin-block: auto;
 }
 .site {
-  color: var(--black);
+  color: var(--main);
   text-decoration: underline;
 }
 .grid-col-3 {

@@ -23,7 +23,7 @@
 
     a {
       text-decoration: none;
-      color: var(--black);
+      color: var(--main);
     }
   }
 }
@@ -32,7 +32,7 @@
 }
 .logo {
   font-family: "Inter", sans-serif;
-  color: var(--black);
+  color: var(--main);
   font-weight: 800;
   font-size: var(--30px);
 }
@@ -47,7 +47,7 @@ $button-width: 35px;
 a.Xl-thin {
   display: inline-block;
   position: relative;
-  color: var(--black);
+  color: var(--main);
   text-decoration: none;
   overflow: hidden;
   top: 5px;
@@ -55,7 +55,7 @@ a.Xl-thin {
   &:after {
     content: "";
     position: absolute;
-    background: var(--black);
+    background: var(--main);
     height: 2px;
     width: 0%;
     transform: translateX(-50%);
@@ -101,7 +101,7 @@ a.Xl-thin {
   }
 
   span {
-    background: var(--black);
+    background: var(--main);
     border: none;
     height: 3px;
     width: 100%;
@@ -123,7 +123,7 @@ a.Xl-thin {
 
 .overlay {
   position: fixed;
-  background: var(--black);
+  background: var(--main);
   top: 0;
   left: 0;
   width: 100%;
@@ -167,6 +167,8 @@ a.Xl-thin {
     list-style: none;
     position: relative;
     height: 100%;
+    padding-left: 0;
+    align-items: center;
 
     li {
       display: block;
@@ -178,9 +180,13 @@ a.Xl-thin {
         display: block;
         position: relative;
         color: var(--white) !important;
+        font-size: 5rem;
+        font-weight: 100;
         text-decoration: none;
         overflow: hidden;
         padding-bottom: 1rem;
+        text-transform: capitalize;
+
         &:hover:after,
         &:focus:after,
         &:active:after {

@@ -6,13 +6,12 @@
 @media (max-width: 1440px) {
   .about-grid {
     display: grid;
-    grid-template-rows: 15vh 10vh 60vh;
+    grid-template-rows: 25vh 35vh 60vh;
   }
   .grid-lft-pad {
     grid-template-columns: 40% 60%;
   }
 }
-
 @media (max-width: 1400px) {
   .xl-padding {
     padding: 5rem 10rem;
@@ -50,7 +49,7 @@
   // about page
   .about-grid {
     display: grid;
-    grid-template-rows: 15vh 10vh 45vh;
+    grid-template-rows: 25vh 20vh 50vh;
   }
   .about-type {
     width: 95%;
@@ -60,7 +59,6 @@
     padding-inline: 3rem;
   }
 }
-
 @media (max-width: 1024px) {
   /* Styles for tablets in portrait mode */
   .header {
@@ -123,7 +121,7 @@
     display: block;
   }
   .about-grid {
-    grid-template-rows: 15vh 5vh 45vh;
+    grid-template-rows: 20vh 20vh 50vh;
   }
   form.main-pad-x {
     padding-inline: 0;
@@ -132,7 +130,6 @@
     width: 20vw;
   }
 }
-
 @media (max-width: 900px) {
   .xl-padding {
     padding: 5rem;
@@ -146,6 +143,9 @@
   }
   .intro__p-page-container {
     padding-inline: 0;
+  }
+  .about-grid {
+    grid-template-rows: 30vh 30vh 50vh;
   }
   .footer-logo {
     width: 20vw;
@@ -173,7 +173,10 @@
   .pad-lft-double {
     padding-left: 0;
   }
-
+  .Xl-thin.pad-bottom-10vh {
+    font-weight: 400;
+    font-size: var(--24px);
+  }
   // header
   .header {
     right: 1rem;
@@ -324,7 +327,7 @@
     padding-top: 3vh;
   }
   .pad-bottom-10vh {
-    padding-bottom: 3vh;
+    padding-bottom: 5vh;
   }
   .main-pad-x {
     padding-inline: 1.5rem;
@@ -352,8 +355,8 @@
     font-weight: 400;
   }
   .Xl-thin {
-    font-weight: 400;
-    font-size: var(--30px);
+    font-weight: 100;
+    font-size: var(--12px);
   }
   .col-rvs {
     flex-direction: column-reverse;
