@@ -8,6 +8,9 @@
 .cb-color {
   background-color: var(--cb-color);
 }
+.main-color {
+  background-color: var(--main);
+}
 .main-pad-x {
   padding-inline: 7rem;
 }
@@ -104,6 +107,9 @@
 }
 .hight-100 {
   height: 100vh;
+}
+.hight-70 {
+  height: 70vh;
 }
 .width-100 {
   width: 100%;

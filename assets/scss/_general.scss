@@ -51,7 +51,7 @@
 .color-white {
   color: var(--white) !important;
 }
-.color-yellow {
+.color-main {
   background-color: var(--main);
 }
 .color-purple {
@@ -64,7 +64,7 @@
   background-color: var(--baisim-color) !important;
 }
 .color-cb {
-  background-color: var(--cb-color) !important;
+  background-color: var(--main) !important;
 }
 .color-luupe {
   background-color: var(--luupe-color) !important;
@@ -129,7 +129,7 @@ a {
   color: var(--main);
 }
 a:hover {
-  color: inherit !important;
+  // color: inherit !important;
   text-decoration: none !important;
 }
 // the intro section
@@ -335,6 +335,9 @@ a:hover {
     color: var(--white);
   }
 }
+a.site:hover {
+  color: var(--main) !important;
+}
 
 // the project page
 
@@ -496,11 +499,11 @@ a:hover {
 .portrait-img-wrapper {
   display: inline-block;
   width: 100%;
-  height: 35rem;
+  height: 40rem;
   // margin-top: 1rem;
   background-size: cover;
   background-position: center;
-  background-image: url("../img/sample.png");
+  background-image: url("../img/portrait.jpg");
   align-self: flex-start;
 }
 .grid-lft-pad {

@@ -274,6 +274,10 @@ a.Xl-thin:hover:after, a.Xl-thin:focus:after, a.Xl-thin:active:after {
   background-color: var(--cb-color);
 }
 
+.main-color {
+  background-color: var(--main);
+}
+
 .main-pad-x {
   padding-inline: 7rem;
 }
@@ -388,6 +392,10 @@ a.Xl-thin:hover:after, a.Xl-thin:focus:after, a.Xl-thin:active:after {
 
 .hight-100 {
   height: 100vh;
+}
+
+.hight-70 {
+  height: 70vh;
 }
 
 .width-100 {
@@ -655,7 +663,7 @@ a.Xl-thin:hover:after, a.Xl-thin:focus:after, a.Xl-thin:active:after {
   color: var(--white) !important;
 }
 
-.color-yellow {
+.color-main {
   background-color: var(--main);
 }
 
@@ -672,7 +680,7 @@ a.Xl-thin:hover:after, a.Xl-thin:focus:after, a.Xl-thin:active:after {
 }
 
 .color-cb {
-  background-color: var(--cb-color) !important;
+  background-color: var(--main) !important;
 }
 
 .color-luupe {
@@ -749,7 +757,6 @@ a {
 }
 
 a:hover {
-  color: inherit !important;
   text-decoration: none !important;
 }
 
@@ -974,6 +981,10 @@ a:hover {
   color: var(--white);
 }
 
+a.site:hover {
+  color: var(--main) !important;
+}
+
 .project-intro {
   width: 100%;
   justify-content: space-between;
@@ -1145,10 +1156,10 @@ a:hover {
 .portrait-img-wrapper {
   display: inline-block;
   width: 100%;
-  height: 35rem;
+  height: 40rem;
   background-size: cover;
   background-position: center;
-  background-image: url("../img/sample.png");
+  background-image: url("../img/portrait.jpg");
   align-self: flex-start;
 }
 
@@ -1694,6 +1705,9 @@ input:-webkit-autofill:active {
   }
   .credit h3 {
     padding-bottom: 3rem;
+  }
+  .next-pro-wrap {
+    padding-bottom: 2rem;
   }
   .next-pro-wrap {
     height: 50vh;

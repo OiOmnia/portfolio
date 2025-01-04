@@ -146,30 +146,31 @@ jQuery(document).ready(($) => {
       }
     });
   });
-  // slideshow - one
-  $("#slideshow > div:gt(0)").hide();
 
-  setInterval(function () {
-    $("#slideshow > div:first")
-      .fadeOut(100)
-      .next()
-      .fadeIn(100)
-      .end()
-      .appendTo("#slideshow");
-  }, 3000);
+  // // slideshow - one
+  // $("#slideshow > div:gt(0)").hide();
 
-  // slideshow - two
-  $("#slideshow-two > div:gt(0)").hide();
+  // setInterval(function () {
+  //   $("#slideshow > div:first")
+  //     .fadeOut(100)
+  //     .next()
+  //     .fadeIn(100)
+  //     .end()
+  //     .appendTo("#slideshow");
+  // }, 3000);
 
-  setInterval(function () {
-    $("#slideshow-two > div:first")
-      .delay(500)
-      .fadeOut(100)
-      .next()
-      .fadeIn(100)
-      .end()
-      .appendTo("#slideshow-two");
-  }, 3000);
+  // // slideshow - two
+  // $("#slideshow-two > div:gt(0)").hide();
+
+  // setInterval(function () {
+  //   $("#slideshow-two > div:first")
+  //     .delay(500)
+  //     .fadeOut(100)
+  //     .next()
+  //     .fadeIn(100)
+  //     .end()
+  //     .appendTo("#slideshow-two");
+  // }, 3000);
 
   // animating services items
   // init controller
