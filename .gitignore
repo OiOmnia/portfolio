@@ -1,11 +1,14 @@
 assets/vid/.DS_Store
 assets/vid/baisim-frontPage.mov
+assets/vid/baisim-frontPage.mp4
 assets/vid/baisim-menu.mov
 assets/vid/load-baisim.mov
 assets/vid/load-baisim.webm
 assets/vid/theLuupe-front-page.mov
 assets/vid/cb-frontPage.mov
+assets/vid/cb-frontPage.mp4
 assets/vid/theLuupe-frontPage.mov
+assets/vid/theLuupe-frontPage.mp4
 draft.html
 assets/img/projects/logos/baisim.svg
 assets/img/projects/logos/cb.svg
@@ -22,4 +25,3 @@ assets/img/projects/the-luupe.webp
 assets/img/projects/.DS_Store
 assets/img/projects/the-luupe.webp
 assets/img/projects/the-luupe.webp
-.env
