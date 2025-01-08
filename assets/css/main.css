@@ -778,7 +778,7 @@ a:hover {
   height: 110px;
   background-size: cover;
   background-position: center;
-  background-image: url("../img/portrait.jpg");
+  background-image: url("../img/portrait.webp");
   border-radius: 50%;
 }
 
@@ -1159,7 +1159,7 @@ a.site:hover {
   height: 40rem;
   background-size: cover;
   background-position: center;
-  background-image: url("../img/portrait.jpg");
+  background-image: url("../img/portrait.webp");
   align-self: flex-start;
 }
 
