@@ -49,7 +49,7 @@
   color: var(--main);
 }
 .color-white {
-  color: var(--white) !important;
+  color: var(--light) !important;
 }
 .color-main {
   background-color: var(--main);
@@ -526,6 +526,10 @@ a.site:hover {
 }
 
 // form
+.dropdown {
+  position: relative;
+  z-index: 1;
+}
 input {
   align-items: center;
   border: 2px solid transparent;
@@ -561,9 +565,9 @@ textarea::placeholder {
   font-family: "Inter", sans-serif;
 }
 textarea {
-  border: 2px solid var(--main);
+  border-bottom: 2px solid var(--main);
   margin-block: 5rem !important;
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
 input[type="submit"] {
@@ -593,11 +597,11 @@ input:-internal-autofill-selected {
 .show > .btn-secondary.dropdown-toggle {
   background-color: var(--light);
   border-color: transparent;
-  border: 2px solid var(--main);
+  // border: 2px solid var(--main);
 }
 .dropdown-item {
   padding: 0.5rem 1.5rem;
-  color: var(--main);
+  color: var(--main) !important;
   font-size: var(--16px);
   font-family: "Inter", sans-serif;
   text-transform: capitalize;
