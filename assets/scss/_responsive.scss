@@ -156,7 +156,7 @@
   }
   .intro__skills {
     width: 50%;
-    padding-top: 3rem;
+    padding-block: 3rem;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
@@ -370,6 +370,7 @@
   }
   .p-big {
     letter-spacing: 1px;
+    padding-bottom: 2rem;
   }
   .p-regular {
     letter-spacing: 1px;
@@ -394,11 +395,15 @@
   }
 
   // home page
+  .intro__img {
+    width: 70px;
+    height: 70px;
+  }
   .intro__skills {
     width: 60%;
 
     h5 {
-      font-size: 12px;
+      font-size: 0.75rem;
     }
   }
   .spin-txt {
@@ -429,13 +434,13 @@
   // project page
   .project-intro {
     p {
-      font-size: 1rem;
-      margin-left: 25%;
+      font-size: 0.75rem;
+      margin-left: 15%;
       padding-block: 5rem;
     }
   }
   .project-intro--title {
-    flex-direction: column-reverse;
+    flex-direction: row;
     h3 {
       font-size: 1.5rem;
     }
