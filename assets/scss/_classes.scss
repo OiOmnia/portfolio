@@ -14,12 +14,7 @@
 .main-pad-x {
   padding-inline: 7rem;
 }
-.main-pad-y {
-  padding-block: 7rem;
-}
-.main-pad-2rem {
-  padding-block: 1rem;
-}
+
 .xl-padding {
   padding: 5rem 20rem;
 }
@@ -117,8 +112,17 @@
 .width-50 {
   width: 50%;
 }
-.pad-block {
+.pad-block-5vh {
   padding-block: 5vh;
+}
+.pad-block-10rem {
+  padding-bottom: 10rem;
+}
+.main-pad-y {
+  padding-block: 7rem;
+}
+.main-pad-2rem {
+  padding-block: 1rem;
 }
 .pad-top {
   padding-top: 5vh;

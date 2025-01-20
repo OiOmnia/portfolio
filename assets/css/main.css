@@ -282,14 +282,6 @@ a.Xl-thin:hover:after, a.Xl-thin:focus:after, a.Xl-thin:active:after {
   padding-inline: 7rem;
 }
 
-.main-pad-y {
-  padding-block: 7rem;
-}
-
-.main-pad-2rem {
-  padding-block: 1rem;
-}
-
 .xl-padding {
   padding: 5rem 20rem;
 }
@@ -406,8 +398,20 @@ a.Xl-thin:hover:after, a.Xl-thin:focus:after, a.Xl-thin:active:after {
   width: 50%;
 }
 
-.pad-block {
+.pad-block-5vh {
   padding-block: 5vh;
+}
+
+.pad-block-10rem {
+  padding-bottom: 10rem;
+}
+
+.main-pad-y {
+  padding-block: 7rem;
+}
+
+.main-pad-2rem {
+  padding-block: 1rem;
 }
 
 .pad-top {
@@ -518,6 +522,7 @@ a.Xl-thin:hover:after, a.Xl-thin:focus:after, a.Xl-thin:active:after {
   left: 0;
   transition: opacity 0.03s;
   z-index: 100 !important;
+  mix-blend-mode: multiply;
 }
 
 .circle-hide {
@@ -541,6 +546,7 @@ a.Xl-thin:hover:after, a.Xl-thin:focus:after, a.Xl-thin:active:after {
   border-radius: 50%;
   pointer-events: none;
   z-index: 100;
+  mix-blend-mode: multiply;
 }
 
 .circle-scale {
@@ -640,7 +646,7 @@ a.Xl-thin:hover:after, a.Xl-thin:focus:after, a.Xl-thin:active:after {
   --42px: clamp(0.7rem, 1vw + 1rem, 2.625rem);
   --60px: clamp(1.87rem, 2vw + 1rem, 3.75rem);
   --80px: clamp(1rem, 4vw + 1rem, 5rem);
-  --110px: clamp(2.6rem, 8vw, 8rem);
+  --110px: clamp(2.6rem, 8vw, 10rem);
   --130px: 8.125rem;
   --140px: clamp(5rem, 4vw + 4rem, 8.75rem);
   --160px: 10rem;
@@ -1326,8 +1332,15 @@ input:-webkit-autofill:active {
 }
 
 @media (min-width: 1600px) {
+  .intro-home {
+    height: 100vh;
+    justify-content: space-between;
+  }
   .about-grid {
     grid-template-rows: 25vh 10vh 52vh;
+  }
+  .project-intro p {
+    padding-block: 10rem;
   }
 }
 @media (max-width: 1440px) {
@@ -1337,6 +1350,9 @@ input:-webkit-autofill:active {
   }
   .grid-lft-pad {
     grid-template-columns: 40% 60%;
+  }
+  .pad-block-15rem {
+    padding-block: 5rem;
   }
 }
 @media (max-width: 1400px) {
@@ -1450,8 +1466,15 @@ input:-webkit-autofill:active {
   }
 }
 @media (max-width: 900px) {
+  .circle-main,
+  .second-circle {
+    display: none;
+  }
   .xl-padding {
     padding: 5rem;
+  }
+  .pad-block-15rem {
+    padding-block: 3rem;
   }
   .intro__skills {
     width: 50%;
@@ -1589,8 +1612,14 @@ input:-webkit-autofill:active {
     width: 100%;
     padding-right: 0;
   }
+  .about-type p {
+    font-size: 1rem;
+    line-height: 1.8;
+    letter-spacing: 1px;
+  }
   .flx-col.pad-rit-double {
-    padding-inline: 1.5rem;
+    padding-inline: 0;
+    padding-block: 2rem;
   }
   .footer-logo {
     width: 30vw;
@@ -1631,7 +1660,7 @@ input:-webkit-autofill:active {
     padding-bottom: 5vh;
   }
   .main-pad-x {
-    padding-inline: 1.5rem;
+    padding-inline: 2rem;
   }
   .main-pad-y {
     padding-block: 3rem;
@@ -1647,6 +1676,7 @@ input:-webkit-autofill:active {
   }
   .p-regular {
     letter-spacing: 1px;
+    font-size: 1rem;
   }
   .L-h1-bold {
     font-weight: 400;
@@ -1719,6 +1749,9 @@ input:-webkit-autofill:active {
   .footer-logo {
     width: 45vw;
   }
+  .about-img-type.main-pad-x {
+    padding-inline: 0;
+  }
 }
 @media (max-width: 480px) {
   /* Styles for smartphones */
@@ -1760,7 +1793,7 @@ input:-webkit-autofill:active {
   .flx-col.pad-rit-double {
     padding-inline: 0;
   }
-  .pad-block {
+  .pad-block-5vh {
     padding-block: 2vh;
   }
   .pad-top {

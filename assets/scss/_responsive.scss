@@ -1,6 +1,15 @@
 @media (min-width: 1600px) {
+  .intro-home {
+    height: 100vh;
+    justify-content: space-between;
+  }
   .about-grid {
     grid-template-rows: 25vh 10vh 52vh;
+  }
+  .project-intro {
+    p {
+      padding-block: 10rem;
+    }
   }
 }
 @media (max-width: 1440px) {
@@ -10,6 +19,9 @@
   }
   .grid-lft-pad {
     grid-template-columns: 40% 60%;
+  }
+  .pad-block-15rem {
+    padding-block: 5rem;
   }
 }
 @media (max-width: 1400px) {
@@ -131,8 +143,16 @@
   }
 }
 @media (max-width: 900px) {
+  // hide the cursor
+  .circle-main,
+  .second-circle {
+    display: none;
+  }
   .xl-padding {
     padding: 5rem;
+  }
+  .pad-block-15rem {
+    padding-block: 3rem;
   }
   .intro__skills {
     width: 50%;
@@ -285,9 +305,16 @@
   .about-type {
     width: 100%;
     padding-right: 0;
+
+    p {
+      font-size: 1rem;
+      line-height: 1.8;
+      letter-spacing: 1px;
+    }
   }
   .flx-col.pad-rit-double {
-    padding-inline: 1.5rem;
+    padding-inline: 0;
+    padding-block: 2rem;
   }
   .footer-logo {
     width: 30vw;
@@ -330,7 +357,7 @@
     padding-bottom: 5vh;
   }
   .main-pad-x {
-    padding-inline: 1.5rem;
+    padding-inline: 2rem;
   }
   .main-pad-y {
     padding-block: 3rem;
@@ -346,6 +373,7 @@
   }
   .p-regular {
     letter-spacing: 1px;
+    font-size: 1rem;
   }
   .L-h1-bold {
     font-weight: 400;
@@ -428,6 +456,10 @@
   .footer-logo {
     width: 45vw;
   }
+  // about page
+  .about-img-type.main-pad-x {
+    padding-inline: 0;
+  }
 }
 @media (max-width: 480px) {
   /* Styles for smartphones */
@@ -469,7 +501,7 @@
   .flx-col.pad-rit-double {
     padding-inline: 0;
   }
-  .pad-block {
+  .pad-block-5vh {
     padding-block: 2vh;
   }
   .pad-top {
